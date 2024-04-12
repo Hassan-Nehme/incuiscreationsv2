@@ -61,7 +61,7 @@ const heroSubTitles = [
 <!--* Styles -->
 <style lang="scss">
 .hero {
-  min-height: 100dvh;
+  min-height: 100svh;
   padding-top: 10vh;
   color: $color-text-light;
   overflow: hidden;
