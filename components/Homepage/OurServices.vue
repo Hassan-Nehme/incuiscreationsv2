@@ -1,5 +1,24 @@
 <!--* Script -->
-<script setup></script>
+<script setup>
+const exampleImgs = [
+  {
+    project: "sospiro",
+    img: 1,
+  },
+  {
+    project: "migato",
+    img: 6,
+  },
+  {
+    project: "lesinconnus",
+    img: 5,
+  },
+  {
+    project: "louisexincouture",
+    img: 2,
+  },
+];
+</script>
 
 <!--* HTML -->
 <template>
@@ -32,7 +51,13 @@
 
       <!-- *Services Middle -->
       <div class="services-middle">
-        <img src="/portfolio/lesinconnus/1.webp" alt="" />
+        <NuxtImg
+          format="web"
+          width="650"
+          class="img-cover"
+          src="/portfolio/lesinconnus/1.webp"
+          alt=""
+        />
       </div>
 
       <!-- *Services Right -->
@@ -46,10 +71,13 @@
   </section>
   <!-- *Image Examples -->
   <div class="image-examples-grid">
-    <img class="img-cover" src="/portfolio/sospiro/1.webp" alt="" />
-    <img class="img-cover" src="/portfolio/migato/6.webp" alt="" />
-    <img class="img-cover" src="/portfolio/lesinconnus/5.webp" alt="" />
-    <img class="img-cover" src="/portfolio/louisexincouture/2.webp" alt="" />
+    <NuxtImg
+      width="600"
+      class="img-cover"
+      v-for="img in exampleImgs"
+      :src="`/portfolio/${img.project}/${img.img}.webp`"
+      alt=""
+    />
   </div>
 </template>
 
@@ -90,12 +118,7 @@
 
 .services-middle {
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
     filter: contrast(1.1);
-    max-height: 70vh;
   }
 }
 
