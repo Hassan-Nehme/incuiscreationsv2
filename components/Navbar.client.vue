@@ -10,14 +10,14 @@
     <!-- * Menu Options -->
     <div class="menu-options" v-if="showMenu">
       <ul class="nav-links">
-        <!--? Services -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="production page" to="/">Services</nuxt-link>
-        </li>
-
         <!--? Portfolio -->
         <li @click="toggleMenu" class="nav-link line-under">
           <nuxt-link aria-label="portfolio page" to="/">Portfolio</nuxt-link>
+        </li>
+
+        <!--? Services -->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="production page" to="/">Services</nuxt-link>
         </li>
 
         <!--? About -->

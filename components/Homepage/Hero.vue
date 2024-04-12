@@ -94,15 +94,17 @@ const heroSubTitles = [
   //   background-color: red;
   display: grid;
   justify-content: center;
-  line-height: 1;
+  line-height: 0.85;
   h1 {
     text-transform: uppercase;
     margin-bottom: $spacing-lg;
+    letter-spacing: 0.25rem;
   }
 
   span {
     font-size: 4rem;
     font-weight: 500;
+    color: $color-accent;
   }
 
   h2 {
@@ -117,7 +119,7 @@ const heroSubTitles = [
 
 .hero-right {
   //   background-color: red;
-  //   text-align: center;
+
   display: grid;
   justify-content: end;
 
@@ -137,17 +139,28 @@ const heroSubTitles = [
   }
 
   span {
-    text-decoration: underline solid 0.2rem;
+    // text-decoration: underline solid 0.2rem;
     font-weight: 600;
     letter-spacing: 0.25rem;
-    // background-color: red;
+    color: $color-accent;
     transform: translateX(-100%);
     display: inline-block;
+    font-size: 4.5rem;
+
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 0.25rem;
+      background-color: $color-accent;
+      width: 150%;
+    }
   }
 }
 
 // *Media
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .hero-main-text {
     grid-template-columns: 1fr;
   }
@@ -156,7 +169,7 @@ const heroSubTitles = [
     justify-content: start;
 
     h1 {
-      font-size: 8rem;
+      font-size: 8.5rem;
     }
   }
 
