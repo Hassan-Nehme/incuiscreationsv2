@@ -52,7 +52,6 @@ const exampleImgs = [
       <!-- *Services Middle -->
       <div class="services-middle">
         <NuxtImg
-          format="web"
           width="650"
           class="img-cover"
           src="/portfolio/lesinconnus/1.webp"
