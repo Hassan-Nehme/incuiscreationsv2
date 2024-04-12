@@ -49,11 +49,11 @@ const heroSubTitles = [
 
     <!-- *Right Hero -->
     <div class="hero-right">
-      <h3 v-for="subtitle in heroSubTitles">
-        <span>{{ subtitle.tag }}</span> <br />
-        {{ subtitle.sub1 }} <br />
-        {{ subtitle.sub2 }}
-      </h3>
+      <div class="hero-box" v-for="sub in heroSubTitles">
+        <h3>{{ sub.tag }}</h3>
+        <h5>{{ sub.sub1 }}</h5>
+        <h5>{{ sub.sub2 }}</h5>
+      </div>
     </div>
   </section>
 </template>
@@ -114,6 +114,7 @@ const heroSubTitles = [
   h3 {
     text-transform: uppercase;
     margin-bottom: $spacing-sm;
+    // background-color: red;
   }
 
   span {
@@ -127,5 +128,15 @@ const heroSubTitles = [
   }
 }
 
+.hero-box {
+  h5 {
+    padding-left: $spacing-md;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $base-ff;
+  }
+
+  margin-bottom: $spacing-md;
+}
 // *Media
 </style>
