@@ -96,9 +96,9 @@ const exampleImgs = [
 
 .our-services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  //   grid-template-columns: 1fr 1.5fr 1fr;
-  gap: $spacing-lg;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: $spacing-xlg;
 }
 
 .services-left {
@@ -112,12 +112,13 @@ const exampleImgs = [
 
   p {
     margin-bottom: $spacing-md;
+    line-height: 2;
   }
 }
 
 .services-middle {
   img {
-    filter: contrast(1.1);
+    filter: contrast(1.1) grayscale(1);
   }
 }
 
