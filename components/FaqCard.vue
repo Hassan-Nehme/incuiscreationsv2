@@ -21,6 +21,11 @@ defineProps(["showAnswer", "question", "answer"]);
 
   max-width: 100rem;
   margin: 0 auto;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    background-color: lighten(black, 80%);
+  }
 
   h5 {
     display: flex;
