@@ -89,6 +89,7 @@ const exampleImgs = [
     max-width: 150rem;
     margin: 0 auto;
     margin-bottom: $spacing-xlg;
+    margin-top: $spacing-xlg;
     font-family: $base-ff;
     letter-spacing: $letter-spacing-md;
   }
@@ -99,6 +100,7 @@ const exampleImgs = [
   // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: 1fr 1.2fr 1fr;
   gap: $spacing-xlg;
+  padding-bottom: 10vh;
 }
 
 .services-left {
@@ -137,6 +139,7 @@ const exampleImgs = [
 .image-examples-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  gap: $spacing-md;
 }
 
 // *Media

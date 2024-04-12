@@ -30,32 +30,30 @@ const heroSubTitles = [
 <!--* HTML -->
 <template>
   <section class="hero-section">
-    <div class="hero-main-text">
-      <!-- *Left Hero -->
-      <div class="hero-left">
-        <h1>
-          incuis <br />
-          <span>studio</span> creations <br />
-          <span>creative art direction & design</span>
-        </h1>
+    <!-- *Left Hero -->
+    <div class="hero-left">
+      <h1>
+        incuis <br />
+        <span>studio</span> creations <br />
+        <span>creative art direction & design</span>
+      </h1>
 
-        <h2>
-          we love <br />
-          design <br />
-          style& <br />
-          art <br />
-          &sun
-        </h2>
-      </div>
+      <h2>
+        we love <br />
+        design <br />
+        style& <br />
+        art <br />
+        &sun
+      </h2>
+    </div>
 
-      <!-- *Right Hero -->
-      <div class="hero-right">
-        <h3 v-for="subtitle in heroSubTitles">
-          <span>{{ subtitle.tag }}</span> <br />
-          {{ subtitle.sub1 }} <br />
-          {{ subtitle.sub2 }}
-        </h3>
-      </div>
+    <!-- *Right Hero -->
+    <div class="hero-right">
+      <h3 v-for="subtitle in heroSubTitles">
+        <span>{{ subtitle.tag }}</span> <br />
+        {{ subtitle.sub1 }} <br />
+        {{ subtitle.sub2 }}
+      </h3>
     </div>
   </section>
 </template>
@@ -67,6 +65,12 @@ const heroSubTitles = [
   padding-top: 10vh;
   color: $color-text-light;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-xlg;
 
   // & Background
   background: linear-gradient(
@@ -80,25 +84,14 @@ const heroSubTitles = [
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
-  display: grid;
-  align-items: center;
-}
-
-.hero-main-text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .hero-left {
-  //   background-color: red;
-  display: grid;
-  justify-content: center;
-  line-height: 0.85;
+  // background-color: red;
+
   h1 {
     text-transform: uppercase;
-    margin-bottom: $spacing-lg;
-    letter-spacing: 0.25rem;
+    line-height: 0.85;
   }
 
   span {
@@ -112,71 +105,27 @@ const heroSubTitles = [
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 
-    line-height: 1.5;
-    transform: translateX(6%);
+    // line-height: 1.5;
+    // transform: translateX(6%);
   }
 }
 
 .hero-right {
-  //   background-color: red;
-
-  display: grid;
-  justify-content: end;
-
   h3 {
     text-transform: uppercase;
     margin-bottom: $spacing-sm;
-
-    &:nth-child(1) {
-      transform: translateX(-60%);
-    }
-    &:nth-child(2) {
-      transform: translateX(-40%);
-    }
-    &:nth-child(3) {
-      transform: translateX(-20%);
-    }
   }
 
   span {
     // text-decoration: underline solid 0.2rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.25rem;
     color: $color-accent;
-    transform: translateX(-100%);
+    // transform: translateX(-100%);
     display: inline-block;
     font-size: 4.5rem;
-
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      height: 0.25rem;
-      background-color: $color-accent;
-      width: 150%;
-    }
   }
 }
 
 // *Media
-@media (max-width: 1150px) {
-  .hero-main-text {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-left {
-    justify-content: start;
-
-    h1 {
-      font-size: 8.5rem;
-    }
-  }
-
-  .hero-right {
-    h3 {
-      transform: translateX(0) !important;
-    }
-  }
-}
 </style>
