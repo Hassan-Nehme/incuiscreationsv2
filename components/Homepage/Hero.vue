@@ -106,7 +106,7 @@ const heroSubTitles = [
     letter-spacing: 0.5rem;
 
     // line-height: 1.5;
-    // transform: translateX(6%);
+    transform: translateX(8%);
   }
 }
 
