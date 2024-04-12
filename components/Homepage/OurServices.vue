@@ -88,7 +88,7 @@ const exampleImgs = [
     text-align: center;
     max-width: 150rem;
     margin: 0 auto;
-    margin-bottom: $spacing-lg;
+    margin-bottom: $spacing-xlg;
     font-family: $base-ff;
     letter-spacing: $letter-spacing-md;
   }
@@ -126,9 +126,10 @@ const exampleImgs = [
   place-content: center;
 
   h3 {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: $letter-spacing-md;
+    font-family: $base-ff;
   }
 }
 

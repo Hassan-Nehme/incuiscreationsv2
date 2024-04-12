@@ -58,7 +58,8 @@
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // background-color: blue;
+
+  align-items: center;
 }
 
 .logo {
@@ -73,14 +74,10 @@ nav {
   }
 }
 
-.menu-options {
-  display: grid;
-}
-
 .nav-links {
   // background-color: red;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 2.5rem;
 }
