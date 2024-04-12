@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/image", //? Nuxt Image
     "nuxt-icon", //? Nuxt Icons
     "@pinia/nuxt", //? Pinia
+    "@formkit/auto-animate/nuxt", //? Auto-Animate
   ],
 
   //& Global SCSS file & variables in all components

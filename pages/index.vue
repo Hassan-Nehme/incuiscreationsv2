@@ -9,6 +9,9 @@
   <!-- *Recent Works -->
   <!-- <HomepageRecentWorks /> -->
   <HomepageLastWorks />
+
+  <!-- *FAQ -->
+  <Faq />
 </template>
 
 <!--* Styles -->

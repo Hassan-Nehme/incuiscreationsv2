@@ -29,7 +29,7 @@ const heroSubTitles = [
 
 <!--* HTML -->
 <template>
-  <section class="hero-section">
+  <section class="hero">
     <!-- *Left Hero -->
     <div class="hero-left">
       <h1>
@@ -60,7 +60,7 @@ const heroSubTitles = [
 
 <!--* Styles -->
 <style lang="scss">
-.hero-section {
+.hero {
   min-height: 100dvh;
   padding-top: 10vh;
   color: $color-text-light;
@@ -69,7 +69,7 @@ const heroSubTitles = [
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   gap: $spacing-xlg;
 
   // & Background
@@ -132,4 +132,22 @@ const heroSubTitles = [
   margin-bottom: $spacing-md;
 }
 // *Media
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-right {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-left {
+    h1 {
+      font-size: 10rem;
+      padding: 1rem;
+    }
+  }
+}
 </style>

@@ -71,7 +71,7 @@ const exampleImgs = [
   <!-- *Image Examples -->
   <div class="image-examples-grid">
     <NuxtImg
-      width="600"
+      width="700"
       class="img-cover"
       v-for="img in exampleImgs"
       :src="`/portfolio/${img.project}/${img.img}.webp`"
