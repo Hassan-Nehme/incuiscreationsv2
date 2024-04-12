@@ -92,10 +92,13 @@ const heroSubTitles = [
   h1 {
     text-transform: uppercase;
     line-height: 0.85;
+
+    margin-bottom: $spacing-sm;
   }
 
   span {
-    font-size: 4rem;
+    font-size: 6rem;
+
     font-weight: 500;
     color: $color-accent;
   }
@@ -115,16 +118,6 @@ const heroSubTitles = [
     text-transform: uppercase;
     margin-bottom: $spacing-sm;
     // background-color: red;
-  }
-
-  span {
-    // text-decoration: underline solid 0.2rem;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    color: $color-accent;
-    // transform: translateX(-100%);
-    display: inline-block;
-    font-size: 4.5rem;
   }
 }
 
