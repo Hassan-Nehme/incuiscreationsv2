@@ -1,0 +1,55 @@
+.btn {
+  cursor: pointer;
+  background: $color-background-dark;
+  color: $color-text-light;
+  border: none;
+
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  display: inline-block;
+}
+
+.btnHighlight {
+  transition: 0.5s ease-in-out;
+
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.25rem $color-background-light);
+  &:hover {
+    color: $color-text-light;
+    transform: translateY(-10%);
+  }
+}
+
+.btnHoverTranslate {
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0 0 0.5rem $color-background-light);
+    transform: translateY(-10%);
+  }
+}
+
+.btnHero {
+  background-color: $color-background-light;
+  color: $color-text-dark;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(90deg, #fcb045 0%, #f08a59 100%);
+}
+
+.btnProduction {
+  transition: 0.5s ease-in-out;
+  background-color: $color-accent;
+  color: $color-text-light;
+  border-radius: 1rem;
+  &:hover {
+    background-color: $color-background-light;
+    color: $color-accent;
+  }
+}
+
+.btn-nobase {
+  button {
+    background: none;
+    border: none;
+  }
+}

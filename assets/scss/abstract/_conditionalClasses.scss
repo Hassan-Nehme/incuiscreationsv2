@@ -1,0 +1,49 @@
+// & Nav
+.darkBackground {
+  background-color: $color-background-dark;
+  a {
+    color: $color-text-light;
+  }
+}
+
+.lightBackground {
+  background-color: $color-background-light;
+  color: $color-text-dark !important;
+}
+
+.lightText {
+  color: white !important;
+}
+
+.absNav {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+
+  a {
+    color: $color-text-light;
+  }
+}
+
+.line-under {
+  a {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      background-color: $color-accent;
+      height: 2px;
+      width: 100%;
+      transition: transform 0.5s;
+
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
