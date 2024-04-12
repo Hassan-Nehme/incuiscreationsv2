@@ -34,7 +34,7 @@ const heroSubTitles = [
     <div class="hero-left">
       <h1>
         incuis <br />
-        <span>studio</span> creations <br />
+        <span>agency</span> creations <br />
         <span>creative art direction & design</span>
       </h1>
 
