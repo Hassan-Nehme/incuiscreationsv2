@@ -10,8 +10,8 @@ const exampleImgs = [
     img: 6,
   },
   {
-    project: "lesinconnus",
-    img: 5,
+    project: "reinventedparfums",
+    img: 1,
   },
   {
     project: "louisexincouture",
