@@ -8,8 +8,13 @@
     </div>
 
     <!-- * Menu Options -->
-    <div class="menu-options" v-if="showMenu">
+    <div class="menu-options" :class="{ 'menu-hide': !showMenu }">
       <ul class="nav-links">
+        <!--? Home -->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="portfolio page" to="/">Home</nuxt-link>
+        </li>
+
         <!--? Portfolio -->
         <li @click="toggleMenu" class="nav-link line-under">
           <nuxt-link aria-label="portfolio page" to="/">Portfolio</nuxt-link>
@@ -99,6 +104,13 @@ nav {
   margin: 0 0 0 auto;
 }
 
+//*Burger Menu Animation Classes
+
+.menu-hide {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
 // *MEDIA
 //& 1150px
 //? Hambuger Menu Mobile
@@ -115,6 +127,8 @@ nav {
   }
 
   .menu-options {
+    border-top: solid 0.2rem $color-accent;
+
     position: fixed;
     top: 10vh;
     right: 0;
@@ -128,8 +142,11 @@ nav {
     justify-content: center;
     align-items: center;
 
+    transition: 0.75s ease-in-out;
+
     a {
-      font-size: 6rem;
+      text-transform: uppercase;
+      font-size: 7rem;
       letter-spacing: 0.3rem;
       color: $color-text-light;
     }
