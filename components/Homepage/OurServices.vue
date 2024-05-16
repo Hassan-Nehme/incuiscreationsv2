@@ -95,7 +95,7 @@ const services = [
     <ListInfoCards :values="services" />
   </section>
   <!-- *Image Examples -->
-  <div class="image-examples-grid">
+  <!-- <div class="image-examples-grid">
     <NuxtImg
       width="700"
       class="img-cover"
@@ -103,7 +103,7 @@ const services = [
       :src="`/portfolio/${img.project}/${img.img}.webp`"
       alt=""
     />
-  </div>
+  </div> -->
 </template>
 
 <!--* Styles -->
