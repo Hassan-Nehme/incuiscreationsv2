@@ -11,19 +11,9 @@
     <div class="menu-options" :class="{ 'menu-hide': !showMenu }">
       <ul class="nav-links">
         <!--? Home -->
-        <li @click="toggleMenu" class="nav-link line-under">
+        <!-- <li @click="toggleMenu" class="nav-link line-under">
           <nuxt-link aria-label="portfolio page" to="/">Home</nuxt-link>
-        </li>
-
-        <!--? Portfolio -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="portfolio page" to="/">Portfolio</nuxt-link>
-        </li>
-
-        <!--? Services -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="production page" to="/">Services</nuxt-link>
-        </li>
+        </li> -->
 
         <!--? About -->
         <li @click="toggleMenu" class="nav-link line-under">
@@ -32,10 +22,29 @@
           >
         </li>
 
+        <!--? Portfolio -->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="production page" to="/">Production</nuxt-link>
+        </li>
+
+        <!--? Digital Marketing -->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="digital marketing page" to="/"
+            >Digital Marketing</nuxt-link
+          >
+        </li>
+
+        <!--? Brand Development-->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="digital marketing page" to="/"
+            >Brand Development</nuxt-link
+          >
+        </li>
+
         <!--? Contact -->
         <li @click="toggleMenu" class="nav-link line-under">
           <nuxt-link aria-label="about page" to="/" rel="nofollow"
-            >Get in touch</nuxt-link
+            >Contact</nuxt-link
           >
         </li>
       </ul>
@@ -93,6 +102,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 2.5rem;
+  margin: 0 -5rem;
 }
 
 .nav-link {
