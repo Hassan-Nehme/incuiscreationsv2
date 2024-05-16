@@ -121,7 +121,7 @@ const heroSubTitles = [
   h3 {
     text-transform: uppercase;
     margin-bottom: $spacing-sm;
-    // background-color: red;
+    color: $color-accent;
   }
 }
 

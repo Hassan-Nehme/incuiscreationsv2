@@ -54,7 +54,7 @@
       <button aria-label="burger menu toggle">
         <!-- ?White -->
         <Icon
-          name="iconamoon:menu-burger-horizontal-bold"
+          name="iconamoon:menu-burger-horizontal-thin"
           color="white"
           size="4.5rem"
         />
@@ -158,7 +158,7 @@ nav {
 
     a {
       text-transform: uppercase;
-      font-size: 5rem;
+      font-size: 6.5rem;
       letter-spacing: 0.3rem;
       color: $color-text-light;
     }
