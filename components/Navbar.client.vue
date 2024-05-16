@@ -66,6 +66,8 @@
           name="iconamoon:menu-burger-horizontal-thin"
           color="white"
           size="4.5rem"
+          class="menu-icon"
+          style="cursor: pointer"
         />
       </button>
     </div>
