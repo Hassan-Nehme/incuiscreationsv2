@@ -50,8 +50,8 @@
       </ul>
 
       <Icon
-        name="material-symbols-light:close"
-        size="4.5rem"
+        name="material-symbols:close"
+        size="5rem"
         color="white"
         @click="toggleMenu"
         class="closeMenu"
@@ -168,8 +168,8 @@ nav {
 
     a {
       text-transform: uppercase;
-      font-size: 6.5rem;
-      letter-spacing: 0.3rem;
+      font-size: 6rem;
+      letter-spacing: 0.2rem;
       color: $color-text-light;
     }
 
