@@ -3,26 +3,26 @@
 const heroSubTitles = [
   {
     tag: "01",
-    sub1: "art direction",
-    sub2: "brand design",
+    sub1: "VIDEO PRODUCTION",
+    sub2: "PHOTOGRAPHY",
   },
 
   {
     tag: "02",
     sub1: "digital marketing",
-    sub2: "retail marketing",
+    sub2: "web development",
   },
 
   {
     tag: "03",
-    sub1: "production",
-    sub2: "photography",
+    sub1: "GRAPHIC DESIGN ",
+    sub2: "animation",
   },
 
   {
     tag: "04",
-    sub1: "graphic design",
-    sub2: "development",
+    sub1: "branding",
+    sub2: "RETAIL PLACEMENT - POP UPS - EVENTS",
   },
 ];
 </script>
@@ -35,15 +35,14 @@ const heroSubTitles = [
       <h1>
         incuis <br />
         <span>agency</span> creations <br />
-        <span>creative art direction & design</span>
+        <span> Full-Service Marketing</span>
       </h1>
 
       <h2>
         we love <br />
-        design <br />
-        style& <br />
-        art <br />
-        &sun
+        crafting stories <br />
+        standing out <br />
+        ART & SUN & STRAWBERRIES <br />
       </h2>
     </div>
 
