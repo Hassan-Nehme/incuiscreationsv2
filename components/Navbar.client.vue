@@ -90,7 +90,7 @@ nav {
 .nav-links {
   // background-color: red;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 2.5rem;
 }

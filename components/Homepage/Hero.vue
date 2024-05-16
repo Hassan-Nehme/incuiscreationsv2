@@ -67,7 +67,7 @@ const heroSubTitles = [
   overflow: hidden;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   // flex-wrap: wrap;
   gap: $spacing-xlg;
@@ -136,9 +136,10 @@ const heroSubTitles = [
   margin-bottom: $spacing-md;
 }
 // *Media
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .hero {
     flex-direction: column;
+    padding-top: 15vh;
   }
 
   .hero-right {
