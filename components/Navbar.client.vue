@@ -39,6 +39,14 @@
           >
         </li>
       </ul>
+
+      <Icon
+        name="material-symbols-light:close"
+        size="4.5rem"
+        color="white"
+        @click="toggleMenu"
+        class="closeMenu"
+      />
     </div>
 
     <!-- *Mobile Burger Menu -->
@@ -48,7 +56,7 @@
         <Icon
           name="iconamoon:menu-burger-horizontal-bold"
           color="white"
-          size="5rem"
+          size="4.5rem"
         />
       </button>
     </div>
@@ -71,7 +79,7 @@ nav {
   margin: 0 auto 0 0;
 
   img {
-    max-width: 20rem;
+    max-width: 18rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -111,6 +119,10 @@ nav {
   opacity: 0;
 }
 
+.closeMenu {
+  display: none !important;
+}
+
 // *MEDIA
 //& 1150px
 //? Hambuger Menu Mobile
@@ -130,11 +142,11 @@ nav {
     border-top: solid 0.2rem $color-accent;
 
     position: fixed;
-    top: 10vh;
+    top: 0;
     right: 0;
     background-color: $color-background-dark;
     width: 100vw;
-    height: 90dvh;
+    height: 100dvh;
     z-index: 100;
 
     display: flex;
@@ -146,9 +158,18 @@ nav {
 
     a {
       text-transform: uppercase;
-      font-size: 7rem;
+      font-size: 5rem;
       letter-spacing: 0.3rem;
       color: $color-text-light;
+    }
+
+    .closeMenu {
+      cursor: pointer;
+      display: block !important;
+      color: white;
+      position: absolute;
+      top: 2.5%;
+      right: 5%;
     }
   }
 

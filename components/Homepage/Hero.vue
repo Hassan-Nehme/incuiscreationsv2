@@ -84,6 +84,10 @@ const heroSubTitles = [
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+
+  @media (max-width: 900px) {
+    background-attachment: scroll;
+  }
 }
 
 .hero-left {
@@ -91,7 +95,7 @@ const heroSubTitles = [
 
   h1 {
     text-transform: uppercase;
-    line-height: 0.85;
+    line-height: 0.9;
 
     margin-bottom: $spacing-sm;
   }
