@@ -38,7 +38,7 @@ defineProps(["showAnswer", "question", "answer"]);
   }
 
   p {
-    padding: $spacing-md 0;
+    padding: $spacing-md;
   }
 }
 </style>

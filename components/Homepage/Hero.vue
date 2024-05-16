@@ -68,6 +68,7 @@ const heroSubTitles = [
 
   display: flex;
   justify-content: space-around;
+  justify-content: center;
   align-items: center;
   // flex-wrap: wrap;
   gap: $spacing-xlg;

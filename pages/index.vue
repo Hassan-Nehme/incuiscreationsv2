@@ -8,7 +8,7 @@
 
   <!-- *Recent Works -->
   <!-- <HomepageRecentWorks /> -->
-  <HomepageLastWorks />
+  <!-- <HomepageLastWorks /> -->
 
   <!-- *FAQ -->
   <Faq />
