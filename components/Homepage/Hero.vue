@@ -22,7 +22,14 @@ const heroSubTitles = [
   {
     tag: "04",
     sub1: "branding",
-    sub2: "RETAIL PLACEMENT - POP UPS - EVENTS",
+    sub2: "RETAIL PLACEMENT",
+    sub3: "RETAIL PLACEMENT",
+    sub4: "RETAIL PLACEMENT",
+  },
+  {
+    tag: "05",
+    sub1: "POP UPS",
+    sub2: "EVENTS",
   },
 ];
 </script>
