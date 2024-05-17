@@ -198,6 +198,7 @@ nav {
   .nav-links {
     flex-direction: column;
     margin-bottom: 3rem;
+    margin-left: 0;
   }
 
   .btnNav {
