@@ -10,8 +10,8 @@ defineProps(["services", "list"]);
 
     <div class="services-grid">
       <div class="service" v-for="service in list">
-        <h4>{{ service.title }}</h4>
-        <p>
+        <h4 v-motion-slideBottom>{{ service.title }}</h4>
+        <p v-motion-slideBottom>
           {{ service.details }}
         </p>
       </div>

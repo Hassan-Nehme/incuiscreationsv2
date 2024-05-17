@@ -17,33 +17,35 @@
 
         <!--? About -->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="about page" to="/" rel="nofollow"
+          <nuxt-link aria-label="about page" to="/about" rel="nofollow"
             >About</nuxt-link
           >
         </li>
 
         <!--? Portfolio -->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="production page" to="/">Production</nuxt-link>
+          <nuxt-link aria-label="production page" to="/production"
+            >Production</nuxt-link
+          >
         </li>
 
         <!--? Digital Marketing -->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="digital marketing page" to="/"
+          <nuxt-link aria-label="digital marketing page" to="/digitalmarketing"
             >Digital Marketing</nuxt-link
           >
         </li>
 
         <!--? Brand Development-->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="digital marketing page" to="/"
+          <nuxt-link aria-label="digital marketing page" to="/branddevelopment"
             >Brand Development</nuxt-link
           >
         </li>
 
         <!--? Contact -->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="about page" to="/" rel="nofollow"
+          <nuxt-link aria-label="about page" to="/contact" rel="nofollow"
             >Contact</nuxt-link
           >
         </li>
@@ -75,9 +77,9 @@
 </template>
 
 <style lang="scss">
-// .router-link-active {
-//   color: $color-accent !important;
-// }
+.router-link-active {
+  color: $color-accent !important;
+}
 
 nav {
   display: grid;
