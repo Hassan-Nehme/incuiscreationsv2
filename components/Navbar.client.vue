@@ -43,6 +43,13 @@
           >
         </li>
 
+        <!--? Portfolio -->
+        <li @click="toggleMenu" class="nav-link line-under">
+          <nuxt-link aria-label="portfolio page" to="/portfolio"
+            >Portfolio</nuxt-link
+          >
+        </li>
+
         <!--? Contact -->
         <li @click="toggleMenu" class="nav-link line-under">
           <nuxt-link aria-label="about page" to="/contact" rel="nofollow"
@@ -106,7 +113,8 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 2.5rem;
-  margin: 0 -5rem;
+  // margin: 0 -10rem;
+  margin-left: -20rem;
 }
 
 .nav-link {
