@@ -48,7 +48,7 @@ const aboutInfo = {
     <!-- * About Info -->
     <div class="about-info">
       <div v-for="info in aboutInfo" v-motion-slideBottom>
-        <h4>&mdash; {{ info.title }}</h4>
+        <h4 class="font-medium">&mdash; {{ info.title }}</h4>
         <p>{{ info.description }}</p>
       </div>
     </div>
