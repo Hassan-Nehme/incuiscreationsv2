@@ -19,6 +19,7 @@ h2 {
 h3 {
   font-size: 4rem;
   font-weight: 500;
+  font-family: "Space Grotesk";
 }
 
 h4 {
@@ -70,7 +71,7 @@ body {
 }
 
 section {
-  padding: 5rem 10vw;
+  padding: 5rem 5vw;
 }
 
 // *NAV & FOOTER
@@ -85,14 +86,14 @@ footer {
 
 nav,
 footer {
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 
 // *MEDIA
 @media (min-width: 3000px) {
-  section {
-    padding: 10rem 20vw;
-  }
+  // section {
+  //   padding: 10rem 20vw;
+  // }
 }
 
 @media (max-width: 2000px) {

@@ -121,7 +121,7 @@ nav {
   a {
     transition: ease-in-out 0.5s;
     position: relative;
-    font-weight: 400;
+    font-weight: 500;
 
     &:hover {
       color: $color-accent;
