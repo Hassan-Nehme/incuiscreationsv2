@@ -73,7 +73,7 @@
         <!-- ?White -->
         <Icon
           name="iconamoon:menu-burger-horizontal-thin"
-          color="white"
+          :color="`${$route.path === '/' ? 'white' : 'black'}`"
           size="4.5rem"
           class="menu-icon"
           style="cursor: pointer"
