@@ -10,8 +10,7 @@ const albums = albumsStore.allAlbums;
 const albumsWithTag = (tag) => {
   albumsStore.currentAlbums = albums.filter((a) => a.categories.includes(tag));
 
-  if (albumsStore.currentAlbums.length === 0)
-    albumsStore.currentAlbums = albumsStore.allAlbums;
+  if (tag === "all projects") albumsStore.currentAlbums = albumsStore.allAlbums;
   return albumsStore.currentAlbums;
 };
 

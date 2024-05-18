@@ -3,6 +3,9 @@
 import { useAlbumsStore } from "/stores/albumsStore";
 
 const albumsStore = useAlbumsStore();
+
+//? Set Current Albums to All Albums on launch
+albumsStore.currentAlbums = albumsStore.allAlbums;
 </script>
 
 <!--* HTML -->
