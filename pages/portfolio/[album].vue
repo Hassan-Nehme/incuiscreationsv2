@@ -37,8 +37,9 @@ const details = albumsStore.allAlbums.find((det) => det.name === album);
 
   <section>
     <!-- *Youtube Video -->
-    <div v-motion-visibleFadeIn>
+    <div>
       <iframe
+        v-motion-visibleFadeIn
         v-for="link in details.links"
         class="w-full aspect-[16/9] mb-5 mt-5"
         :src="`${link}` + '&rel=0'"
