@@ -52,7 +52,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
         v-for="(album, index) in albumsStore.currentAlbums"
         :key="album.id"
         :to="{ path: `/portfolio/${album.name}` }"
-        class="min-[750px]:pr-3 min-[750px]:border-r-[1px] border-black max-[750px]:border-b-[2px] max-[750px]:pb-3"
+        class="album min-[750px]:pr-3 min-[750px]:border-r-[1px] border-black max-[750px]:border-b-[2px] max-[750px]:pb-3"
       >
         <div>
           <!-- *Album Number -->
@@ -60,18 +60,17 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
             <span v-if="index < 9">0</span>{{ index + 1 }}
           </p>
 
-          <!-- *Album Cover -->
-          <div>
+          <!-- *Album Cover Image -->
+          <div class="overflow-hidden">
             <img
-              class="w-full h-full aspect-[1/1.25] object-cover object-center"
+              class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out"
               :src="`/portfolio/coverphotos/${album.name}.webp`"
               :alt="`${album.name} cover photo`"
             />
-
-            <h3 class="uppercase pt-3 text-6">{{ album.title }}</h3>
           </div>
 
           <!-- *Album Title -->
+          <h3 class="uppercase pt-3 text-6">{{ album.title }}</h3>
         </div>
       </nuxt-link>
     </div>
@@ -79,4 +78,18 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 </template>
 
 <!--* Styles -->
-<style lang="scss"></style>
+<style lang="scss">
+.album {
+  &:hover {
+    p,
+    h3 {
+      color: $color-accent;
+      transition: 0.7s ease-in-out;
+    }
+    img {
+      border-radius: 6rem;
+      scale: 1.25;
+    }
+  }
+}
+</style>
