@@ -34,25 +34,27 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
     <FilterHeader />
 
     <!-- *How Many Results -->
-    <p
-      class="text-3 mb-5 uppercase text-right text-accent"
-      v-motion-enterFadeIn
-    >
-      {{ albumsStore.currentAlbums.length }} result<span
-        v-if="albumsStore.currentAlbums.length > 1"
-        >s</span
+    <div v-auto-animate>
+      <p
+        class="text-3 mb-5 uppercase text-right text-accent"
+        :key="albumsStore.currentAlbums.length"
       >
-    </p>
+        {{ albumsStore.currentAlbums.length }} result<span
+          v-if="albumsStore.currentAlbums.length > 1"
+          >s</span
+        >
+      </p>
+    </div>
 
     <!-- *Albums Grid -->
     <div
-      class="grid grid-cols-3 gap-3 max-[1150px]:grid-cols-2 max-[750px]:grid-cols-1"
+      class="grid grid-cols-3 gap-y-6 gap-x-3 max-[1150px]:grid-cols-2 max-[750px]:grid-cols-1"
     >
       <!-- *Album -->
       <nuxt-link
-        v-motion-visibleOnceSlideBottom
+        v-motion-visibleFadeIn
         v-for="(album, index) in albumsStore.currentAlbums"
-        :key="album.id"
+        :key="album.name"
         :to="{ path: `/portfolio/${album.name}` }"
         class="album min-[750px]:pr-3 min-[750px]:border-r-[1px] border-black max-[750px]:border-b-[2px] max-[750px]:pb-3"
       >
@@ -63,9 +65,9 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
           </p>
 
           <!-- *Album Cover Image -->
-          <div class="overflow-hidden">
+          <div class="overflow-hidden rounded-[1rem]">
             <img
-              class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out"
+              class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out contrast-[1.2]"
               :src="`/portfolio/coverphotos/${album.name}.webp`"
               :alt="`${album.name} cover photo`"
             />
@@ -86,11 +88,11 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
     p,
     h3 {
       color: $color-accent;
-      transition: 0.7s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
     img {
       border-radius: 6rem;
-      scale: 1.25;
+      scale: 1.15;
     }
   }
 }

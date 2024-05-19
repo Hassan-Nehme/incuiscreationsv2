@@ -54,7 +54,7 @@ const aboutInfo = {
     </div>
 
     <!-- *Vision -->
-    <div class="vision">
+    <div>
       <h3 v-motion-enterFadeIn class="mb-3">&mdash; Our Visionaries.</h3>
 
       <!-- *Card Grid -->
