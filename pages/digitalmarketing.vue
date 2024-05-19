@@ -78,9 +78,15 @@ const solutions = {
 <template>
   <section class="marketing">
     <!-- *Page Header -->
-    <!-- <PageHeader :title="['digital', 'marketing']" /> -->
+    <AlbumHeader
+      title="Digital Marketing Services"
+      :description="[
+        'Digital Marketing and Branding Excellence',
+        'Unlock the full potential of your brand in the digital landscape with INCUIS Creations’ comprehensive digital marketing solutions. Our strategic approach blends creativity with data-driven precision, ensuring that your brand not only stands out but also achieves measurable success.',
+      ]"
+    />
 
-    <div class="pageDetails">
+    <!-- <div class="pageDetails">
       <h5 v-motion-slideBottom>Digital Marketing and Branding Excellence</h5>
       <h5 v-motion-slideBottom>
         Unlock the full potential of your brand in the digital landscape with
@@ -89,7 +95,7 @@ const solutions = {
         ensuring that your brand not only stands out but also achieves
         measurable success.
       </h5>
-    </div>
+    </div> -->
 
     <!-- *Services -->
     <ListServices :services="services" :list="services.list" />

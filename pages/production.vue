@@ -92,15 +92,20 @@ const services = {
 <template>
   <section class="production">
     <!-- *Page Header -->
-    <!-- <PageHeader :title="['production', 'services']" /> -->
+    <AlbumHeader
+      title="Production Services"
+      :description="[
+        'At Incuis Creations, we’re your creative partners, bringing your brand to life through a spectrum of production services tailored to your unique vision.',
+      ]"
+    />
 
-    <div class="pageDetails">
+    <!-- <div class="pageDetails">
       <h5 v-motion-slideBottom>
         At Incuis Creations, we’re your creative partners, bringing your brand
         to life through a spectrum of production services tailored to your
         unique vision.
       </h5>
-    </div>
+    </div> -->
 
     <!-- *Services -->
     <ListServices :services="services" :list="services.list" />

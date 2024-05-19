@@ -1,26 +1,32 @@
 <!--* Script -->
 <script setup>
 import { useAlbumsStore } from "/stores/albumsStore";
-const { album } = useRoute().params;
-
 const albumsStore = useAlbumsStore();
 
+// * Get the album name from the URL
+const { album } = useRoute().params;
+
+// * Find the specific album details
 const details = albumsStore.allAlbums.find((det) => det.name === album);
 </script>
 
 <!--* HTML -->
 <template>
   <!-- *Album Header -->
-  <AlbumHeader :album="details" />
+  <AlbumHeader
+    :title="details.title"
+    :description="details.description"
+    :categories="details.categories"
+  />
 
   <!-- *Album Images Grid -->
   <div
-    class="grid gap-1 grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
+    class="grid gap-1 grid-cols-2 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
   >
     <!-- &Album Images -->
     <div v-for="index in details.images">
       <NuxtImg
-        width="850"
+        v-motion-visibleSlideBottom
         class="w-full min-h-full object-cover object-center"
         :placeholder="[50, 25, 75, 5]"
         :src="`/portfolio/${album}/${index}.webp`"

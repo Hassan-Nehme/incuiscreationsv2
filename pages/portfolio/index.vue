@@ -13,7 +13,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
   <section>
     <div>
       <h1
-        class="uppercase text-[25rem] font-semibold max-[1200px]:text-12 tracking-[1.5rem]"
+        class="uppercase text-[25rem] font-semibold max-[1200px]:text-12 max-[750px]:text-9 tracking-[1.5rem]"
       >
         Portfolio
       </h1>
@@ -29,13 +29,22 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
     <!-- *Filter Header -->
     <FilterHeader />
 
-    <!-- *Albums Grid -->
+    <!-- *How Many Results -->
+    <p class="text-3 mb-5 uppercase text-right" v-motion-enterFadeIn>
+      {{ albumsStore.currentAlbums.length }} result<span
+        v-if="albumsStore.currentAlbums.length > 1"
+        >s</span
+      >
+
+      <!-- *Albums Grid -->
+    </p>
+
     <div
       class="grid grid-cols-3 gap-3 max-[1150px]:grid-cols-2 max-[750px]:grid-cols-1"
     >
       <!-- *Album -->
       <nuxt-link
-        v-motion-enterFadeIn
+        v-motion-visibleOnceSlideBottom
         v-for="(album, index) in albumsStore.currentAlbums"
         :key="album.id"
         :to="{ path: `/portfolio/${album.name}` }"

@@ -36,8 +36,9 @@ const currentTag = ref("all projects");
 
 <!--* HTML -->
 <template>
-  <div class="filterHeader" v-motion-enterFadeIn>
+  <div class="filterHeader text-center mb-10" v-motion-enterFadeIn>
     <h5
+      class="p-2 font-[600] cursor-pointer text-[2.8rem] inline-block uppercase"
       v-for="category in categories"
       @click="
         (currentTag = category),
@@ -53,20 +54,6 @@ const currentTag = ref("all projects");
 
 <!--* Styles -->
 <style lang="scss">
-.filterHeader {
-  text-align: center;
-  margin-bottom: 5rem;
-
-  h5 {
-    padding: 2rem;
-    display: inline-block;
-    text-transform: capitalize;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 2.5rem;
-  }
-}
-
 .filterActive {
   color: $color-accent;
   transition: 0.5s ease-in-out;

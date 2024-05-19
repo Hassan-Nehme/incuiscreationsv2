@@ -73,10 +73,10 @@ const services = [
       <!-- *Services Middle -->
       <div class="services-middle">
         <NuxtImg
-          width="650"
           class="img-cover"
           src="/portfolio/lesinconnus/1.webp"
           alt=""
+          loading="lazy"
         />
       </div>
 
@@ -149,7 +149,7 @@ const services = [
 .services-middle {
   img {
     filter: contrast(1.1) grayscale(1);
-    max-height: 95vh;
+    max-height: 100vh;
     object-position: top;
   }
 }

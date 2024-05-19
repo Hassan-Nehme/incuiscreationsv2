@@ -40,10 +40,10 @@ const aboutInfo = {
 <template>
   <section class="about">
     <!-- *Page Header -->
-    <!-- <PageHeader
-      :subTitle="'at incuis creations'"
-      :title="['we help brands', 'connect with', 'new generations.']"
-    /> -->
+    <AlbumHeader
+      title="About Us"
+      :description="['Get to know the visionaries behind INCUIS Creations.']"
+    />
 
     <!-- * About Info -->
     <div class="about-info">
