@@ -31,6 +31,7 @@ export default {
         primary: "#270A4B",
         secondary: "#E8C36D",
         dark: "#110734",
+        accent: "#f08a59",
       },
       fontSize: {
         2.4: "2.4rem",

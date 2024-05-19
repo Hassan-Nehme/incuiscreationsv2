@@ -10,8 +10,15 @@ defineProps(["services", "list"]);
 
     <div class="services-grid">
       <div class="service" v-for="service in list">
-        <h4 v-motion-slideBottom>{{ service.title }}</h4>
-        <p v-motion-slideBottom>
+        <h4 v-motion-visibleOnceFadeIn>
+          {{ service.title }}
+          <!-- <Icon
+            name="material-symbols:print-outline"
+            color="black"
+            size="3rem"
+          /> -->
+        </h4>
+        <p v-motion-visibleOnceSlideBottom>
           {{ service.details }}
         </p>
       </div>

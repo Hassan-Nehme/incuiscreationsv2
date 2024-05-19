@@ -34,15 +34,17 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
     <FilterHeader />
 
     <!-- *How Many Results -->
-    <p class="text-3 mb-5 uppercase text-right" v-motion-enterFadeIn>
+    <p
+      class="text-3 mb-5 uppercase text-right text-accent"
+      v-motion-enterFadeIn
+    >
       {{ albumsStore.currentAlbums.length }} result<span
         v-if="albumsStore.currentAlbums.length > 1"
         >s</span
       >
-
-      <!-- *Albums Grid -->
     </p>
 
+    <!-- *Albums Grid -->
     <div
       class="grid grid-cols-3 gap-3 max-[1150px]:grid-cols-2 max-[750px]:grid-cols-1"
     >
@@ -78,7 +80,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 </template>
 
 <!--* Styles -->
-<style lang="scss">
+<style lang="scss" scoped>
 .album {
   &:hover {
     p,

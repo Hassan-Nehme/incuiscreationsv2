@@ -84,7 +84,7 @@ export const visibleOnceFadeIn = {
   visibleOnce: {
     opacity: 1,
     transition: {
-      duration: 500,
+      duration: dur,
     },
   },
 };
