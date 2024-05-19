@@ -30,7 +30,7 @@ export default {
       colors: {
         primary: "#270A4B",
         secondary: "#E8C36D",
-        dark: "#110734",
+        dark: "black",
         accent: "#f08a59",
       },
       fontSize: {

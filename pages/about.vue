@@ -57,21 +57,15 @@ const aboutInfo = {
     <div class="vision">
       <h3 v-motion-enterFadeIn class="mb-3">&mdash; Our Visionaries.</h3>
 
-      <div class="vision-grid">
-        <div
-          class="vision-card"
+      <!-- *Card Grid -->
+      <div class="min-[1200px]:grid-cols-3 grid gap-3">
+        <!-- *Cards -->
+        <InfoCard
           v-for="founder in founders"
-          v-motion-visibleSlideBottom
-        >
-          <div>
-            <h4>{{ founder.name }}</h4>
-            <h5>{{ founder.title }}</h5>
-          </div>
-
-          <p>
-            {{ founder.description }}
-          </p>
-        </div>
+          :title="founder.name"
+          :subtitle="founder.title"
+          :description="founder.description"
+        />
       </div>
     </div>
   </section>
@@ -85,37 +79,5 @@ const aboutInfo = {
   grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
   gap: 5rem;
   margin-bottom: 5rem;
-}
-
-// &Vision
-.vision {
-  h2 {
-    margin-bottom: 3rem;
-  }
-}
-
-.vision-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.vision-card {
-  background-color: $color-background-dark;
-  color: $color-text-light;
-  padding: 5rem;
-  border-radius: 3rem;
-  filter: drop-shadow(0 3px 8px black);
-
-  div {
-    margin-bottom: 3rem;
-  }
-}
-
-//* Media
-@media (max-width: 1200px) {
-  .vision-grid {
-    grid-template-columns: 1fr;
-  }
 }
 </style>
