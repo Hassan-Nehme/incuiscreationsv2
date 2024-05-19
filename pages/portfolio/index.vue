@@ -11,29 +11,18 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 <!--* HTML -->
 <template>
   <section>
-    <div>
-      <div class="overflow-hidden">
-        <h1
-          v-motion-slideBottom
-          class="uppercase text-[25rem] font-semibold max-[1200px]:text-12 max-[750px]:text-9 tracking-[1.5rem]"
-        >
-          Portfolio
-        </h1>
-      </div>
-
-      <p class="max-w-[95rem] mb-5 text-3" v-motion-slideBottom>
-        Welcome to our portfolio—a dynamic showcase of our creativity,
-        expertise, and the success stories we’ve crafted for our diverse range
-        of clients. Each project is a testament to our commitment to delivering
-        compelling narratives, driving engagement, and achieving measurable
-        success
-      </p>
-    </div>
+    <!-- *page header -->
+    <AlbumHeader
+      title="Portfolio"
+      :description="[
+        'Welcome to our portfolio—a dynamic showcase of our creativity, expertise, and the success stories we’ve crafted for our diverse range of clients. Each project is a testament to our commitment to delivering compelling narratives, driving engagement, and achieving measurable success.',
+      ]"
+    />
 
     <!-- *Filter Header -->
     <FilterHeader />
 
-    <!-- *How Many Results -->
+    <!-- *Show Result Count-->
     <div v-auto-animate>
       <p
         class="text-3 mb-5 uppercase text-right text-accent"
