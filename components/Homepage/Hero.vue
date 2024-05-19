@@ -82,8 +82,8 @@ const heroSubTitles = [
   // & Background
   background: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.075) 0%,
-      rgba(0, 0, 0, 0.15) 100%
+      rgba(2, 0, 36, 0.2) 0%,
+      rgba(0, 0, 0, 0.1) 100%
     ),
     url("/homepage/hero3.jpeg");
 
