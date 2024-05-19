@@ -85,7 +85,7 @@ const heroSubTitles = [
       rgba(2, 0, 36, 0.075) 0%,
       rgba(0, 0, 0, 0.15) 100%
     ),
-    url("/homepage/hero2.jpeg");
+    url("/homepage/hero3.jpeg");
 
   background-repeat: no-repeat;
   background-position: top;
