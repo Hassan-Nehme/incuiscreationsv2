@@ -40,7 +40,11 @@ defineProps([
         {{ description }}
       </p>
 
-      <nuxt-link to="/">Learn More</nuxt-link>
+      <nuxt-link
+        to="/contact"
+        class="bg-white px-4 py-2 rounded-1 font-[700] uppercase"
+        >Learn More</nuxt-link
+      >
     </div>
   </div>
 </template>

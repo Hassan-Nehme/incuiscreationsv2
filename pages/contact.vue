@@ -3,16 +3,20 @@
 
 <!--* HTML -->
 <template>
-  <!-- *Page Header -->
-  <AlbumHeader
-    title="Get in touch"
-    :description="[
-      'Got a question? We’d love to hear from you. Send us a message and we’ll respond as soon as possible.',
-    ]"
-  />
+  <section>
+    <!-- *Page Header -->
+    <AlbumHeader
+      title="Get in touch"
+      :description="[
+        'Got a question? We’d love to hear from you. Send us a message and we’ll respond as soon as possible.',
+      ]"
+    />
+  </section>
 
   <!-- *Contact Form -->
-  <ContactForm />
+  <div class="grid grid-cols-2 bg-dark pt-[10vh] px-[5vw]">
+    <ContactForm />
+  </div>
 </template>
 
 <!--* Styles -->

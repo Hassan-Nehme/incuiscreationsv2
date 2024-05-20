@@ -1,5 +1,7 @@
 <!--* Script -->
 <script setup>
+const data = ["name", "email", "subject", "phone", "message"];
+
 // *Form Data
 const name = defineModel("name");
 const email = defineModel("email");
@@ -11,11 +13,14 @@ const errorMsg = defineModel("errorMsg");
 const successMsg = defineModel("successMsg");
 const isPending = ref(false);
 
+// const url = "https://formspree.io/f/xgegrjlz";
+const url = "https://formspree.io/f/";
+
 // &Submit Form
 const submitForm = async () => {
   try {
     isPending.value = true;
-    const { error } = await fetch("https://formspree.io/f/xgegrjlz", {
+    const { error } = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -67,14 +72,11 @@ const submitForm = async () => {
   <Toast v-if="successMsg" :toastText="successMsg" :error="false" />
 
   <!-- *form Wrapper -->
-  <div
-    class="form-wrapper bg-white max-[500px]:max-w-[95vw] max-w-[100rem] mx-auto text-black p-5 rounded-[2rem] mb-5 border-black border-[3px]"
-    v-motion-visibleSlideBottom
-  >
+  <div class="form-wrapper text-white mb-5" v-motion-visibleSlideBottom>
     <!-- *Form -->
     <form @submit.prevent="submitForm">
-      <h3 class="font-semibold text-5 text-center mb-3">Send us a message!</h3>
-      <!-- *Inputs -->
+      <!-- <h3 class="font-semibold text-5 text-center mb-3">Send us a message!</h3> -->
+
       <div class="inputs">
         <!-- &Email -->
         <div class="input">
@@ -131,28 +133,33 @@ const submitForm = async () => {
         placeholder="Type your message here..."
         v-model="message"
         required
-        class="my-3 w-full p-1 text-3 rounded-1 min-h-[25rem] bg-none border-black border-[2px]"
+        class="my-3 w-full p-1 text-3 min-h-[15rem] bg-dark border-b-[2px] outline-none focus:border-b-accent resize-none transition-all duration-500 ease-in-out"
       ></textarea>
 
       <!-- *Submit Button -->
-      <button
-        class="btn-form-submit rounded-[1.5rem] w-full bg-dark font-medium text-3 text-white p-2 hover:text-accent duration-500 ease-in-out transition-all"
-        aria-label="send message"
-        :disabled="isPending"
-        v-if="!isPending"
-      >
-        Send Message
-      </button>
+      <div class="flex justify-end">
+        <button
+          class="btn-form-submit rounded-4 bg-white font-medium text-3 text-black px-4 py-1 mt-5 hover:text-accent duration-500 ease-in-out transition-all"
+          aria-label="send message"
+          :disabled="isPending"
+          v-if="!isPending"
+        >
+          Submit
+        </button>
+      </div>
 
       <!-- *Disabled Button -->
-      <button
-        class="rounded-[1.5rem] w-full bg-dark font-medium text-3 text-white p-2 hover:none duration-500 ease-in-out transition-all opacity-50 cursor-not-allowed"
-        aria-label="send message"
-        :disabled="isPending"
-        v-if="isPending"
-      >
-        Sending...
-      </button>
+
+      <div class="flex justify-end">
+        <button
+          class="rounded-4 bg-white font-medium text-3 text-black px-4 py-1 hover:none duration-500 ease-in-out transition-all opacity-60 cursor-not-allowed mt-5"
+          aria-label="send message"
+          :disabled="isPending"
+          v-if="isPending"
+        >
+          Sending...
+        </button>
+      </div>
     </form>
   </div>
 </template>
@@ -163,27 +170,28 @@ const submitForm = async () => {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-in-out;
+
+  input:focus {
+    outline: none;
+    border-bottom: solid 2px $color-accent;
+
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .input {
   input {
-    // background: none;
+    background: none;
     // border: none;
-    color: $color-text-dark !important;
-    padding: 1rem;
+    color: white !important;
+    padding: 3rem;
     font-weight: 600;
-    border-radius: 1rem;
-    font-size: 2.6rem;
-    border-bottom: 2px solid black;
-    width: 100%;
-  }
-}
 
-@media (max-width: 750px) {
-  .form-wrapper {
-    h3 {
-      font-size: 3.6rem;
-    }
+    font-size: 2.6rem;
+    border-bottom: 2px solid white;
+    width: 100%;
   }
 }
 </style>
