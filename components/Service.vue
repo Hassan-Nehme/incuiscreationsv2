@@ -6,7 +6,7 @@ defineProps(["title", "description", "index"]);
 
 <!--* HTML -->
 <template>
-  <div class="bg-white text-black rounded-1">
+  <div class="bg-white text-black rounded-1 max-w-[80rem] mx-auto">
     <div>
       <p
         class="border-b-[2px] border-black border-dashed text-center text-5 py-3"
@@ -26,7 +26,7 @@ defineProps(["title", "description", "index"]);
         <!-- *IMG -->
         <div>
           <img
-            class="w-full h-full object-cover object-top max-h-[40rem] mb-1 rounded-1"
+            class="w-full h-[60rem] object-cover object-top min-[1300px]:max-h-[40rem] mb-1 rounded-1"
             src="/portfolio/lesinconnus/1.webp"
             alt=""
           />

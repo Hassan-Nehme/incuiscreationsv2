@@ -31,7 +31,9 @@ const services = [
 <!--* HTML -->
 <template>
   <section class="bg-dark">
-    <div class="grid grid-cols-4 gap-3">
+    <div
+      class="grid grid-cols-4 gap-3 max-[1300px]:grid-cols-2 max-[850px]:grid-cols-1"
+    >
       <Service
         v-for="(service, index) in services"
         :title="service.title"

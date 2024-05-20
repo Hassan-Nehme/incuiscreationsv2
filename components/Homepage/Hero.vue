@@ -111,7 +111,7 @@ const heroSubTitles = [
     font-size: 6rem;
 
     font-weight: 500;
-    color: $color-accent;
+    // color: $color-accent;
   }
 
   h2 {
@@ -128,7 +128,7 @@ const heroSubTitles = [
   h3 {
     text-transform: uppercase;
     margin-bottom: $spacing-sm;
-    color: $color-accent;
+    // color: $color-accent;
   }
 }
 
