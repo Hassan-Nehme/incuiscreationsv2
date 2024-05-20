@@ -5,12 +5,12 @@ defineProps(["services", "list"]);
 
 <!--* HTML -->
 <template>
-  <div class="list">
-    <h3>&mdash; {{ services.title }}</h3>
+  <div class="list mt-5">
+    <h3 class="mb-1 uppercase text-5">&mdash; {{ services.title }}</h3>
 
     <div class="services-grid">
       <div class="service" v-for="service in list">
-        <h4 v-motion-visibleOnceFadeIn>
+        <h4 v-motion-visibleOnceFadeIn class="text-accent">
           {{ service.title }}
           <!-- <Icon
             name="material-symbols:print-outline"
@@ -30,10 +30,6 @@ defineProps(["services", "list"]);
 <style lang="scss" scoped>
 .list {
   margin-bottom: 3rem;
-
-  h3 {
-    text-transform: uppercase;
-  }
 }
 
 .services-grid {

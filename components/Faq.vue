@@ -33,9 +33,15 @@ const showAnswer = ref(false);
 <!--* HTML -->
 <template>
   <section class="faq">
-    <h2>Frequently Asked Questions</h2>
+    <!-- <h2
+      v-motion-visibleOnceFadeIn
+      class="text-center uppercase font-[600] mb-5"
+    >
+      Frequently Asked Questions
+    </h2> -->
 
     <FaqCard
+      v-motion-visibleOnceSlideLeft
       v-for="question in questions"
       :question="question.q"
       :answer="question.a"
@@ -45,13 +51,4 @@ const showAnswer = ref(false);
 </template>
 
 <!--* Styles -->
-<style lang="scss">
-.faq {
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: $spacing-md;
-  }
-}
-</style>
+<style lang="scss"></style>

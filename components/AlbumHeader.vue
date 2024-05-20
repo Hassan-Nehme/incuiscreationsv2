@@ -9,7 +9,7 @@ defineProps(["album", "title", "description", "categories"]);
     <!-- *Title -->
     <h1
       v-motion-enterFadeIn
-      class="text-9 min-[1000px]:text-[20rem] uppercase tracking-[1.5rem] max-[950px]:mb-3"
+      class="text-9 min-[1000px]:text-[20rem] uppercase tracking-[1.5rem] max-[950px]:mb-3 text-accent"
     >
       {{ title }}
     </h1>

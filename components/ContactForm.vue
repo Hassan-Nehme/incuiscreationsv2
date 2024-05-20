@@ -13,8 +13,7 @@ const errorMsg = defineModel("errorMsg");
 const successMsg = defineModel("successMsg");
 const isPending = ref(false);
 
-// const url = "https://formspree.io/f/xgegrjlz";
-const url = "https://formspree.io/f/";
+const url = "https://formspree.io/f/xgegrjlz";
 
 // &Submit Form
 const submitForm = async () => {
@@ -87,7 +86,6 @@ const submitForm = async () => {
             v-model="email"
             required
           />
-          <hr />
         </div>
 
         <!-- &Name -->
@@ -99,7 +97,6 @@ const submitForm = async () => {
             v-model="name"
             required
           />
-          <hr />
         </div>
 
         <!-- &Subject -->
@@ -111,7 +108,6 @@ const submitForm = async () => {
             v-model="subject"
             required
           />
-          <hr />
         </div>
 
         <!-- &Phone -->
@@ -123,7 +119,6 @@ const submitForm = async () => {
             v-model="phone"
             required
           />
-          <hr />
         </div>
       </div>
 

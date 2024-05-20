@@ -33,10 +33,10 @@ defineProps([
         />
       </div>
 
-      <h4 class="text-8 font-[600] text-accent">
+      <h4 class="text-8 font-[600] mb-1 text-accent">
         {{ subtitle }}
       </h4>
-      <p class="text-3 mb-8">
+      <p class="text-3 mb-10">
         {{ description }}
       </p>
 
