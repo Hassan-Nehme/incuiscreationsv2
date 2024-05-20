@@ -85,7 +85,7 @@ const heroSubTitles = [
       rgba(2, 0, 36, 0.2) 0%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url("/homepage/hero3.jpeg");
+    url("/portfolio/lesinconnus/1.webp");
 
   background-repeat: no-repeat;
   background-position: top;
