@@ -59,7 +59,7 @@ const aboutInfo = {
 
       <!-- *Card Grid -->
       <div class="min-[1200px]:grid-cols-2 grid">
-        <!-- *Cards -->
+        <!-- *Card -->
         <div
           v-for="founder in founders"
           :style="{
@@ -74,17 +74,19 @@ const aboutInfo = {
             background-size: cover;
             background-position: center;
           "
-          class="min-h-[100rem] bg-no-repeat bg-cover bg-center text-white"
+          class="h-[140rem] max-h-[95vh] bg-no-repeat bg-cover bg-center text-white overflow-hidden"
         >
           <div class="flex flex-col justify-end min-h-[100%]">
-            <div class="bg-accent/30 min-h-[65rem] grid grid-cols-2 p-3">
-              <h4 class="text-5 font-bold block">
+            <div
+              class="bg-accent/30 min-h-[65rem] grid min-[675px]:grid-cols-2 p-3"
+            >
+              <h4 class="text-6 font-bold block">
                 <span class="block capitalize" v-for="n in founder.name">{{
                   n
                 }}</span>
               </h4>
 
-              <div>
+              <div class="mt-5">
                 <p class="text-3.6 font-semibold mb-2">{{ founder.title }}</p>
                 <p class="text-[2.6rem] font-medium">
                   {{ founder.description }}
