@@ -26,7 +26,7 @@ defineProps(["title", "description", "index"]);
         <!-- *IMG -->
         <div>
           <img
-            class="w-full h-full object-cover object-top max-h-[40rem] mb-1 rounded-1 grayscale"
+            class="w-full h-full object-cover object-top max-h-[40rem] mb-1 rounded-1"
             src="/portfolio/lesinconnus/1.webp"
             alt=""
           />
