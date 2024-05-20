@@ -75,9 +75,9 @@ const services = [
       </div>
 
       <!-- *Services Middle -->
-      <div class="services-middle">
+      <div class="services-middle overflow-hidden">
         <NuxtImg
-          class="img-cover"
+          class="scale-[2.5] contrast-[1.1] object-cover object-bottom w-full h-full"
           src="/portfolio/lesinconnus/1.webp"
           alt=""
           loading="lazy"
@@ -93,26 +93,7 @@ const services = [
         </h3>
       </div>
     </div>
-
-    <!-- *Info Cards Grid
-    <div class="grid grid-cols-2 gap-2 max-[800px]:grid-cols-1">
-      <InfoCard
-        v-for="service in services"
-        :title="service.title"
-        :description="service.description"
-      />
-    </div> -->
   </section>
-  <!-- *Image Examples -->
-  <!-- <div class="image-examples-grid">
-    <NuxtImg
-      width="700"
-      class="img-cover"
-      v-for="img in exampleImgs"
-      :src="`/portfolio/${img.project}/${img.img}.webp`"
-      alt=""
-    />
-  </div> -->
 </template>
 
 <!--* Styles -->
@@ -152,14 +133,6 @@ const services = [
     line-height: 1.85;
     text-transform: uppercase;
     font-size: 2.6rem;
-  }
-}
-
-.services-middle {
-  img {
-    filter: contrast(1.1) grayscale(1);
-    max-height: 100vh;
-    object-position: top;
   }
 }
 
