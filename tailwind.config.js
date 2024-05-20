@@ -52,6 +52,7 @@ export default {
       },
       dropShadow: {
         md: "1px 1px 20px rgba(0, 0, 0, .75)",
+        img: "0px 0px 15px #f08a59",
         lg: "5px 5px 15px rgba(0, 0, 0, 1)",
       },
       borderRadius: {

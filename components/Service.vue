@@ -27,7 +27,7 @@ defineProps([
     <div class="col-span-2">
       <div>
         <img
-          class="rounded-1 mb-5 object-cover object-center w-full h-full"
+          class="rounded-1 mb-5 object-cover object-center w-full h-full drop-shadow-img"
           :src="`/homepage/hero.jpeg`"
           :alt="'test'"
         />
