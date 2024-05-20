@@ -58,7 +58,7 @@ const aboutInfo = {
       <h3 v-motion-enterFadeIn class="mb-3">&mdash; Our Visionaries.</h3>
 
       <!-- *Card Grid -->
-      <div class="min-[1200px]:grid-cols-2 grid">
+      <div class="min-[1200px]:grid-cols-3 grid">
         <!-- *Card -->
         <div
           v-for="founder in founders"
