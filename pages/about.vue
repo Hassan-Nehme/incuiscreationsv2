@@ -40,11 +40,11 @@ const aboutInfo = {
 <template>
   <section class="about">
     <!-- *Page Header -->
-    <AlbumHeader
-      title="About Us"
-      :description="['Get to know the visionaries behind INCUIS Creations.']"
-    />
-
+    <h1
+      class="text-center font-bold text-[30rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
+    >
+      ABOUT US
+    </h1>
     <!-- * About Info -->
     <div class="about-info">
       <div v-for="info in aboutInfo" v-motion-slideBottom>
@@ -58,7 +58,7 @@ const aboutInfo = {
       <h3 v-motion-enterFadeIn class="mb-3">&mdash; Our Visionaries.</h3>
 
       <!-- *Card Grid -->
-      <div class="min-[1200px]:grid-cols-3 grid">
+      <div class="min-[1200px]:grid-cols-3 gap-2 grid">
         <!-- *Card -->
         <div
           v-for="founder in founders"
@@ -74,10 +74,10 @@ const aboutInfo = {
             background-size: cover;
             background-position: center;
           "
-          class="h-[140rem] max-h-[95vh] bg-no-repeat bg-cover bg-center text-white overflow-hidden"
+          class="h-[140rem] max-h-[95vh] bg-no-repeat bg-cover bg-center text-white overflow-hidden rounded-1"
         >
           <div class="flex flex-col justify-end min-h-[100%]">
-            <div class="bg-accent/30 min-[1200px]:h-[85rem] p-2 py-5">
+            <div class="bg-accent/30 min-[1200px]:h-[80rem] p-2 py-5">
               <h4 class="text-6 font-bold block">
                 <span class="block capitalize" v-for="n in founder.name">{{
                   n
