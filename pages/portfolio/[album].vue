@@ -25,10 +25,10 @@ const details = albumsStore.allAlbums.find((det) => det.name === album);
   >
     <!-- &Album Images -->
     <div v-for="index in details.images">
+      <!-- :placeholder="[50, 25, 75, 5]" -->
       <NuxtImg
         v-motion-visibleSlideBottom
-        class="w-full min-h-full object-cover object-center"
-        :placeholder="[50, 25, 75, 5]"
+        class="w-full min-h-full object-cover object-center rounded-1"
         :src="`/portfolio/${album}/${index}.webp`"
         alt="a selection of images for the album you're viewing"
       />

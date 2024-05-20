@@ -6,12 +6,15 @@
   <!-- *Our Services -->
   <HomepageOurServices />
 
+  <!-- *Services Offered -->
+  <HomepageServices />
+
   <!-- *Recent Works -->
   <!-- <HomepageRecentWorks /> -->
   <!-- <HomepageLastWorks /> -->
 
   <!-- *FAQ -->
-  <Faq />
+  <!-- <Faq /> -->
 </template>
 
 <!--* Styles -->

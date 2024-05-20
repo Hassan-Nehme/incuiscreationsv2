@@ -94,17 +94,14 @@ const services = [
       </div>
     </div>
 
-    <!-- *Why Choose Us -->
-    <h2 class="whatWeOfferTitle">What We Offer</h2>
-
-    <!-- *Info Cards Grid -->
+    <!-- *Info Cards Grid
     <div class="grid grid-cols-2 gap-2 max-[800px]:grid-cols-1">
       <InfoCard
         v-for="service in services"
         :title="service.title"
         :description="service.description"
       />
-    </div>
+    </div> -->
   </section>
   <!-- *Image Examples -->
   <!-- <div class="image-examples-grid">

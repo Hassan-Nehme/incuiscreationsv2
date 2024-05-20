@@ -48,7 +48,7 @@ export default {
         12: "12rem",
         13: "13rem",
         14: "14rem",
-        15: "5rem",
+        15: "15rem",
       },
       dropShadow: {
         md: "1px 1px 20px rgba(0, 0, 0, .75)",

@@ -73,11 +73,14 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 <!--* Styles -->
 <style lang="scss" scoped>
 .album {
+  p,
+  h3 {
+    transition: 0.7s ease-in-out;
+  }
   &:hover {
     p,
     h3 {
       color: $color-accent;
-      transition: 0.5s ease-in-out;
     }
     img {
       border-radius: 6rem;
