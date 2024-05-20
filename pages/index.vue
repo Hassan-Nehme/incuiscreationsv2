@@ -5,9 +5,9 @@
 
   <!-- *Our Services -->
   <HomepageOurServices />
+  <HomepageServices />
 
   <!-- *Services Offered -->
-  <HomepageServices />
 
   <!-- *Recent Works -->
   <!-- <HomepageRecentWorks /> -->
