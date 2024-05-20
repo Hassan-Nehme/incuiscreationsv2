@@ -66,6 +66,9 @@ export default {
         6: "6rem",
         full: "9999px",
       },
+      backgroundImage: {
+        founder: "url('/founders/leda.jpeg')",
+      },
     },
   },
   plugins: [],
