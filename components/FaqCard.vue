@@ -6,16 +6,17 @@ defineProps(["showAnswer", "question", "answer"]);
 <!--* HTML -->
 <template>
   <div
-    class="faq-card mx-auto mb-3 cursor-pointer max-w-[150rem] border-b-[1.5px] border-black"
+    class="faq-card mx-auto mb-2 cursor-pointer w-full border-b-[1.5px] border-black p-2"
     @click="showAnswer = !showAnswer"
     v-auto-animate
   >
-    <h3 class="text-[3.6rem] flex justify-between mb-3 p-1">
+    <h3
+      class="text-[3.2rem] font-[600] flex justify-between hover:text-accent transition-all duration-500 ease-in-out"
+    >
       {{ question }}
       <span class="ml-2 text-accent font-[600]">&plus;</span>
     </h3>
-    <p v-if="showAnswer" class="text-3 p-3 w-full">{{ answer }}</p>
-    <hr />
+    <p v-if="showAnswer" class="text-3 p-3 w-full mb-2">{{ answer }}</p>
   </div>
 </template>
 

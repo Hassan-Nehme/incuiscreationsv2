@@ -180,23 +180,20 @@ const solutions = [
       <div class="flex flex-col justify-between">
         <!-- *Image 1-->
 
-        <nuxt-link to="/portfolio/lesinconnus" class="max-w-[30rem]">
+        <nuxt-link to="/portfolio/lesinconnus" class="max-w-[45rem]">
           <img src="/portfolio/lesinconnus/1.webp" alt="" />
         </nuxt-link>
 
         <!-- *Image 2-->
-        <div class="flex justify-end">
-          <nuxt-link
-            to="/portfolio/sospiro"
-            class="max-w-[35rem] mr-5 hover:rounded-[40rem]"
-          >
+        <div class="flex justify-end max-[1150px]:mt-5">
+          <nuxt-link to="/portfolio/sospiro" class="max-w-[45rem] mr-5">
             <img src="/portfolio/sospiro/3.webp" alt="" />
           </nuxt-link>
         </div>
       </div>
 
       <!-- *Second Column - Production Services -->
-      <div class="p-2">
+      <div class="p-2 max-[1150px]:mt-5">
         <h2 class="mb-3 font-bold capitalize">production services</h2>
 
         <ShowService
@@ -209,13 +206,13 @@ const solutions = [
 
       <!-- *Third Column - Image -->
       <div class="grid place-content-center">
-        <nuxt-link to="/portfolio/louisexincouture" class="max-w-[40rem]">
+        <nuxt-link to="/portfolio/louisexincouture" class="max-w-[50rem]">
           <img src="/portfolio/louisexincouture/1.webp" alt="" />
         </nuxt-link>
       </div>
 
       <!-- *Fourth Column - List Services -->
-      <div class="p-2">
+      <div class="p-2 max-[1150px]:mt-5">
         <!-- *Digital Marketing -->
         <h2 class="mb-3 font-bold capitalize">digital marketing</h2>
         <ShowService
