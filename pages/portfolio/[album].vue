@@ -12,30 +12,30 @@ const details = albumsStore.allAlbums.find((det) => det.name === album);
 
 <!--* HTML -->
 <template>
-  <!-- *Album Header -->
-  <AlbumHeader
-    :title="details.title"
-    :description="details.description"
-    :categories="details.categories"
-  />
-
-  <!-- *Album Images Grid -->
-  <div
-    class="grid gap-1 grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
-  >
-    <!-- &Album Images -->
-    <div v-for="index in details.images">
-      <!-- :placeholder="[50, 25, 75, 5]" -->
-      <NuxtImg
-        v-motion-visibleSlideBottom
-        class="w-full min-h-full object-cover object-center rounded-1"
-        :src="`/portfolio/${album}/${index}.webp`"
-        alt="a selection of images for the album you're viewing"
-      />
-    </div>
-  </div>
-
   <section>
+    <!-- *Album Header -->
+    <AlbumHeader
+      :title="details.title"
+      :description="details.description"
+      :categories="details.categories"
+    />
+
+    <!-- *Album Images Grid -->
+    <div
+      class="grid gap-1 grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
+    >
+      <!-- &Album Images -->
+      <div v-for="index in details.images">
+        <!-- :placeholder="[50, 25, 75, 5]" -->
+        <NuxtImg
+          v-motion-visibleSlideBottom
+          class="w-full min-h-full object-cover object-center rounded-1"
+          :src="`/portfolio/${album}/${index}.webp`"
+          alt="a selection of images for the album you're viewing"
+        />
+      </div>
+    </div>
+
     <!-- *Youtube Video -->
     <div>
       <iframe
