@@ -41,7 +41,7 @@ const aboutInfo = {
   <section class="about">
     <!-- *Page Header -->
     <h1
-      class="text-center font-bold text-[20rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
+      class="text-center font-bold text-[15rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
     >
       &#9654; ABOUT US
     </h1>
