@@ -167,12 +167,16 @@ const solutions = [
 <template>
   <section class="production">
     <!-- *Page Header -->
-    <AlbumHeader
-      title="Our Services"
-      :description="[
-        'At Incuis Creations, we’re your creative partners, bringing your brand to life through a spectrum of production services, digital marketing, & brand development solutions tailored to your unique vision.',
-      ]"
-    />
+    <h1
+      class="text-center font-bold text-[20rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
+    >
+      &#9654; OUR SERVICES
+    </h1>
+    <p class="text-[4.5rem] text-center mb-[10vh]">
+      At Incuis Creations, we’re your creative partners, bringing your brand to
+      life through a spectrum of production services, digital marketing, & brand
+      development solutions tailored to your unique vision.
+    </p>
 
     <!-- *Services Grid -->
     <div class="grid min-[1150px]:grid-cols-4">
@@ -181,7 +185,7 @@ const solutions = [
         <!-- *Image 1-->
         <nuxt-link
           to="/portfolio/lesinconnus"
-          class="max-w-[45rem]"
+          class="max-w-[40rem]"
           v-motion-slideBottom
         >
           <img src="/portfolio/lesinconnus/1.webp" alt="" />
@@ -191,7 +195,7 @@ const solutions = [
         <div class="flex justify-end max-[1150px]:mt-5">
           <nuxt-link
             to="/portfolio/sospiro"
-            class="max-w-[45rem] mr-5"
+            class="max-w-[40rem] mr-5"
             v-motion-visibleSlideBottom
           >
             <img src="/portfolio/sospiro/3.webp" alt="" />
@@ -200,7 +204,7 @@ const solutions = [
       </div>
 
       <!-- *Second Column - Production Services -->
-      <div class="p-2 max-[1150px]:mt-3 min-[1150px]:ml-5" v-motion-enterFadeIn>
+      <div class="p-2 max-[1150px]:mt-3" v-motion-enterFadeIn>
         <h2 class="mb-3 font-bold capitalize">production services</h2>
 
         <ShowService

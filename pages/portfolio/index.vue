@@ -12,6 +12,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 <template>
   <section>
     <!-- *page header -->
+
     <AlbumHeader
       title="Portfolio"
       :description="[
