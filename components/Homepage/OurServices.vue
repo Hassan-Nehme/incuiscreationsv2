@@ -77,7 +77,7 @@ const services = [
       <!-- *Services Middle -->
       <div class="services-middle">
         <NuxtImg
-          class="img-cover"
+          class="img-cover rounded-1"
           src="/portfolio/lesinconnus/1.webp"
           alt=""
           loading="lazy"

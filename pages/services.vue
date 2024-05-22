@@ -189,7 +189,7 @@ const solutions = [
           class="max-w-[40rem]"
           v-motion-slideBottom
         >
-          <img src="/portfolio/lesinconnus/1.webp" alt="" />
+          <img class="rounded-1" src="/portfolio/lesinconnus/1.webp" alt="" />
         </nuxt-link>
 
         <!-- *Image 2-->
@@ -199,7 +199,7 @@ const solutions = [
             class="max-w-[40rem] mr-5"
             v-motion-visibleSlideBottom
           >
-            <img src="/portfolio/sospiro/3.webp" alt="" />
+            <img class="rounded-1" src="/portfolio/sospiro/3.webp" alt="" />
           </nuxt-link>
         </div>
       </div>
@@ -223,7 +223,11 @@ const solutions = [
           class="max-w-[50rem]"
           v-motion-visibleSlideBottom
         >
-          <img src="/portfolio/louisexincouture/1.webp" alt="" />
+          <img
+            class="rounded-1"
+            src="/portfolio/louisexincouture/1.webp"
+            alt=""
+          />
         </nuxt-link>
       </div>
 
