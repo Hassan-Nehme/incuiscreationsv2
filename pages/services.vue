@@ -179,21 +179,28 @@ const solutions = [
       <!-- *First Column - Images -->
       <div class="flex flex-col justify-between">
         <!-- *Image 1-->
-
-        <nuxt-link to="/portfolio/lesinconnus" class="max-w-[45rem]">
+        <nuxt-link
+          to="/portfolio/lesinconnus"
+          class="max-w-[45rem]"
+          v-motion-slideBottom
+        >
           <img src="/portfolio/lesinconnus/1.webp" alt="" />
         </nuxt-link>
 
         <!-- *Image 2-->
         <div class="flex justify-end max-[1150px]:mt-5">
-          <nuxt-link to="/portfolio/sospiro" class="max-w-[45rem] mr-5">
+          <nuxt-link
+            to="/portfolio/sospiro"
+            class="max-w-[45rem] mr-5"
+            v-motion-visibleSlideBottom
+          >
             <img src="/portfolio/sospiro/3.webp" alt="" />
           </nuxt-link>
         </div>
       </div>
 
       <!-- *Second Column - Production Services -->
-      <div class="p-2 max-[1150px]:mt-5">
+      <div class="p-2 max-[1150px]:mt-3 min-[1150px]:ml-5" v-motion-enterFadeIn>
         <h2 class="mb-3 font-bold capitalize">production services</h2>
 
         <ShowService
@@ -206,13 +213,17 @@ const solutions = [
 
       <!-- *Third Column - Image -->
       <div class="grid place-content-center">
-        <nuxt-link to="/portfolio/louisexincouture" class="max-w-[50rem]">
+        <nuxt-link
+          to="/portfolio/louisexincouture"
+          class="max-w-[50rem]"
+          v-motion-visibleSlideBottom
+        >
           <img src="/portfolio/louisexincouture/1.webp" alt="" />
         </nuxt-link>
       </div>
 
       <!-- *Fourth Column - List Services -->
-      <div class="p-2 max-[1150px]:mt-5">
+      <div class="p-2 min-[1150px]:ml-3 max-[1150px]:mt-5" v-motion-enterFadeIn>
         <!-- *Digital Marketing -->
         <h2 class="mb-3 font-bold capitalize">digital marketing</h2>
         <ShowService
