@@ -1,7 +1,33 @@
+<script setup>
+const quickLinks = [
+  {
+    title: "Home",
+    link: "/",
+  },
+
+  {
+    title: "About",
+    link: "/about",
+  },
+  {
+    title: "Services",
+    link: "/services",
+  },
+  {
+    title: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+];
+</script>
+
 <!--* HTML -->
 <template>
   <footer>
-    <h2>
+    <h2 class="pt-3 text-8">
       Ready to work <br />
       with us?
     </h2>
@@ -10,7 +36,14 @@
     <hr />
 
     <div class="footerLinks">
-      <nuxt-link to="/">Contact</nuxt-link>
+      <div>
+        <nuxt-link
+          class="mr-2"
+          v-for="link in quickLinks"
+          :to="`${link.link}`"
+          >{{ link.title }}</nuxt-link
+        >
+      </div>
 
       <div class="socialLinks">
         <!-- *Instagram -->
@@ -41,10 +74,6 @@ footer {
   color: $color-text-light;
   background-color: $color-background-dark;
   padding-bottom: 2rem;
-
-  h2 {
-    padding-top: 3rem;
-  }
 
   a {
     color: $color-text-light !important;
