@@ -11,7 +11,7 @@ defineProps(["album", "title", "description", "categories"]);
       v-motion-enterFadeIn
       class="text-9 min-[1000px]:text-[12rem] uppercase tracking-[1.5rem] max-[950px]:mb-3"
     >
-      <!-- <Icon name="gravity-ui:triangle-right-fill" color="black" size="9rem" /> -->
+      <Icon name="gravity-ui:triangle-right-fill" color="black" size="9rem" />
       {{ title }}
     </h1>
 
