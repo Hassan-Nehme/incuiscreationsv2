@@ -13,7 +13,7 @@
     />
 
     <!-- *FAQ -->
-    <Faq />
+    <!-- <Faq /> -->
   </section>
 
   <!-- *Contact Form -->
