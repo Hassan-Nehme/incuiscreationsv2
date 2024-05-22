@@ -43,7 +43,8 @@ const aboutInfo = {
     <h1
       class="text-center font-bold text-[15rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
     >
-      &#9654; ABOUT US
+      <Icon name="gravity-ui:triangle-right-fill" color="black" size="15rem" />
+      ABOUT US
     </h1>
     <!-- * About Info -->
     <div class="about-info">
