@@ -40,7 +40,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt", //? Pinia
     "@formkit/auto-animate/nuxt", //? Auto-Animate
     "@nuxtjs/tailwindcss", //? TailwindCSS
-    "@hypernym/nuxt-gsap", //? GSAP
   ],
 
   //& Global SCSS file & variables in all components

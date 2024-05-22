@@ -49,7 +49,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
       >
         <div>
           <!-- *Album Number -->
-          <p class="text-12 font-thin">
+          <p class="text-12 font-[200]">
             <span v-if="index < 9">0</span>{{ index + 1 }}
           </p>
 

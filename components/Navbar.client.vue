@@ -22,24 +22,10 @@
           >
         </li>
 
-        <!--? Portfolio -->
+        <!--? Services -->
         <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="production page" to="/production"
-            >Production</nuxt-link
-          >
-        </li>
-
-        <!--? Digital Marketing -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="digital marketing page" to="/digitalmarketing"
-            >Digital Marketing</nuxt-link
-          >
-        </li>
-
-        <!--? Brand Development-->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="digital marketing page" to="/branddevelopment"
-            >Brand Development</nuxt-link
+          <nuxt-link aria-label="our services page" to="/services"
+            >Services</nuxt-link
           >
         </li>
 
