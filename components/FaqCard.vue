@@ -11,12 +11,12 @@ defineProps(["showAnswer", "question", "answer"]);
     v-auto-animate
   >
     <h3
-      class="text-[3.2rem] font-[600] flex justify-between hover:text-accent transition-all duration-500 ease-in-out"
+      class="text-[3rem] font-[600] flex justify-between hover:text-accent transition-all duration-500 ease-in-out"
     >
       {{ question }}
       <span class="ml-2 text-accent font-[600]">&plus;</span>
     </h3>
-    <p v-if="showAnswer" class="text-3 p-3 w-full mb-2">{{ answer }}</p>
+    <p v-if="showAnswer" class="text-[2.6rem] p-3 w-full mb-2">{{ answer }}</p>
   </div>
 </template>
 

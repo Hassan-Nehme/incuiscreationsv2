@@ -27,7 +27,7 @@ const quickLinks = [
 <!--* HTML -->
 <template>
   <footer>
-    <h2 class="pt-3 text-8">
+    <h2 class="pt-3 text-5">
       Ready to work <br />
       with us?
     </h2>

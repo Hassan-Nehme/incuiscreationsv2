@@ -39,20 +39,15 @@ const aboutInfo = {
 <!--* HTML -->
 <template>
   <section class="about">
+    <!-- *page header -->
+    <AlbumHeader
+      title="About"
+      :description="[
+        '     Welcome to INCUIS Creations, where innovative strategies converge with creative excellence, shaping impactful brand experiences. At the heart of our agency is a trio of visionary leaders, each contributing a unique blend of expertise to redefine the landscape of creative advertising. At INCUIS Creations, storytelling is not just a passion; it’s our shared mastery. We believe in the power of narratives to not only captivate but also drive results. Guided by the mantra, “It’s not creative unless it sells,” we embrace the philosophy of “Show, don’t tell,” inspired by the wisdom of David Ogilvy.',
+      ]"
+    />
+
     <!-- *Page Header -->
-    <h1
-      class="text-center font-bold text-[15rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
-    >
-      <Icon name="gravity-ui:triangle-right-fill" color="black" size="15rem" />
-      ABOUT US
-    </h1>
-    <!-- * About Info -->
-    <div class="about-info">
-      <div v-for="info in aboutInfo" v-motion-slideBottom>
-        <h4 class="font-medium">&mdash; {{ info.title }}</h4>
-        <p>{{ info.description }}</p>
-      </div>
-    </div>
 
     <!-- *Vision -->
     <div>

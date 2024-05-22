@@ -21,6 +21,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
     />
 
     <!-- *Filter Header -->
+    <hr class="h-[.2rem] bg-black" />
     <FilterHeader />
 
     <!-- *Show Result Count-->
@@ -38,7 +39,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 
     <!-- *Albums Grid -->
     <div
-      class="grid grid-cols-3 gap-y-6 gap-x-3 max-[1150px]:grid-cols-2 max-[750px]:grid-cols-1"
+      class="grid grid-cols-4 gap-y-6 gap-x-3 max-[1150px]:grid-cols-3 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1"
     >
       <!-- *Album -->
       <nuxt-link
@@ -50,7 +51,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
       >
         <div>
           <!-- *Album Number -->
-          <p class="text-12 font-[200]">
+          <p class="text-10 font-[200]">
             <span v-if="index < 9">0</span>{{ index + 1 }}
           </p>
 
@@ -64,7 +65,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
           </div>
 
           <!-- *Album Title -->
-          <h3 class="uppercase pt-3 text-6">{{ album.title }}</h3>
+          <h3 class="uppercase pt-3 text-5">{{ album.title }}</h3>
         </div>
       </nuxt-link>
     </div>

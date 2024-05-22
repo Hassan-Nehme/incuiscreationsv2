@@ -38,7 +38,7 @@ const currentTag = ref("all projects");
 <template>
   <div class="filterHeader text-center mb-10" v-motion-enterFadeIn>
     <h5
-      class="p-2 font-[500] cursor-pointer text-3 inline-block uppercase hover:text-secondary transition-all duration-500 ease-in-out"
+      class="p-2 font-[500] cursor-pointer text-[2.6rem] inline-block uppercase hover:text-secondary transition-all duration-500 ease-in-out"
       v-for="category in categories"
       @click="
         (currentTag = category),

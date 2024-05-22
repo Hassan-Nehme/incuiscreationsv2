@@ -166,8 +166,17 @@ const solutions = [
 <!--* HTML -->
 <template>
   <section class="production">
+    <!-- *page header -->
+
+    <AlbumHeader
+      title="SERVICES"
+      :description="[
+        '      At Incuis Creations, we’re your creative partners, bringing your brand to life through a spectrum of production services, digital marketing, & brand development solutions tailored to your unique vision.',
+      ]"
+    />
+
     <!-- *Page Header -->
-    <h1
+    <!-- <h1
       class="text-center font-bold text-[15rem] max-[1080px]:text-[20rem] max-[640px]:text-[15rem] max-[500px]:text-[12rem]"
     >
       <Icon name="gravity-ui:triangle-right-fill" color="black" size="15rem" />
@@ -177,7 +186,7 @@ const solutions = [
       At Incuis Creations, we’re your creative partners, bringing your brand to
       life through a spectrum of production services, digital marketing, & brand
       development solutions tailored to your unique vision.
-    </p>
+    </p> -->
 
     <!-- *Services Grid -->
     <div class="grid min-[1150px]:grid-cols-4">
