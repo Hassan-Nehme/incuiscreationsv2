@@ -21,7 +21,7 @@ const details = albumsStore.allAlbums.find((det) => det.name === album);
 
   <!-- *Album Images Grid -->
   <div
-    class="grid gap-1 grid-cols-2 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
+    class="grid gap-1 grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
   >
     <!-- &Album Images -->
     <div v-for="index in details.images">

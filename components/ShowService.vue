@@ -9,7 +9,7 @@ const showDetails = ref(false);
   <div v-auto-animate class="mb-5">
     <!-- *Title -->
     <p
-      class="inline-block text-[3.2rem] font-[600] cursor-pointer hover:text-accent transition-all duration-700 ease-in-out"
+      class="inline-block text-[3rem] font-[600] cursor-pointer hover:text-accent transition-all duration-700 ease-in-out"
       @click="showDetails = !showDetails"
     >
       <span v-if="index < 9" class="font-[500]">0</span
@@ -17,7 +17,7 @@ const showDetails = ref(false);
     </p>
 
     <!-- *Details -->
-    <p class="text-[2.8rem] mb-5 mt-1" v-if="showDetails">{{ details }}</p>
+    <p class="text-[2.6rem] mb-5 mt-1" v-if="showDetails">{{ details }}</p>
   </div>
 </template>
 
