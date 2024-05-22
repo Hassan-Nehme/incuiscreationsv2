@@ -11,7 +11,7 @@ defineProps(["album", "title", "description", "categories"]);
       v-motion-enterFadeIn
       class="text-9 min-[1000px]:text-[12rem] uppercase tracking-[1.5rem] max-[950px]:mb-3"
     >
-      <Icon name="gravity-ui:triangle-right-fill" color="black" size="9rem" />
+      <!-- <Icon name="gravity-ui:triangle-right-fill" color="black" size="9rem" /> -->
       {{ title }}
     </h1>
 
@@ -19,13 +19,13 @@ defineProps(["album", "title", "description", "categories"]);
 
     <div class="flex flex-col mb-[5vh]" v-motion-enterFadeIn>
       <p
-        class="text-[2.8rem] max-w-[110rem] mb-3 self-end"
+        class="text-[2.8rem] max-w-[110rem] mb-3 self-end font-[300]"
         v-for="desc in description"
       >
         {{ desc }}
       </p>
 
-      <p class="text-3 uppercase" v-for="cat in categories">
+      <p class="text-3 uppercase font-[300]" v-for="cat in categories">
         {{ cat }}
       </p>
     </div>
