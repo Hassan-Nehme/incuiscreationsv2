@@ -73,15 +73,15 @@ const aboutInfo = {
           class="h-[140rem] max-h-[95vh] bg-no-repeat bg-cover bg-center text-white overflow-hidden rounded-1"
         >
           <div class="flex flex-col justify-end min-h-[100%]">
-            <div class="bg-accent/30 min-[1200px]:h-[80rem] p-2 py-5">
-              <h4 class="text-6 font-bold block">
+            <div class="bg-accent/30 min-[1200px]:h-[75rem] p-2 py-5">
+              <h4 class="text-5 font-bold block">
                 <span class="block capitalize" v-for="n in founder.name">{{
                   n
                 }}</span>
               </h4>
 
               <div class="mt-5">
-                <p class="text-3.6 font-semibold mb-2">{{ founder.title }}</p>
+                <p class="text-3 font-semibold mb-1">{{ founder.title }}</p>
                 <p class="text-[2.4rem] font-medium">
                   {{ founder.description }}
                 </p>

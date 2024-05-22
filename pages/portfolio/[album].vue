@@ -41,7 +41,7 @@ const details = albumsStore.allAlbums.find((det) => det.name === album);
       <iframe
         v-motion-visibleFadeIn
         v-for="link in details.links"
-        class="w-full aspect-[16/9] mb-5 mt-5"
+        class="w-full max-w-[160rem] aspect-[16/9] mb-5 mt-5 mx-auto"
         :src="`${link}` + '&rel=0'"
         title="YouTube video player"
         frameborder="0"
