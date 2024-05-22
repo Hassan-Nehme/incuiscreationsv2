@@ -229,7 +229,7 @@ const solutions = [
       <div class="grid place-content-center">
         <nuxt-link
           to="/portfolio/louisexincouture"
-          class="max-w-[50rem]"
+          class="max-w-[40rem]"
           v-motion-visibleSlideBottom
         >
           <img
