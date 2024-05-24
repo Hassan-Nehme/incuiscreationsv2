@@ -35,6 +35,10 @@ const services = [
 <!--* HTML -->
 <template>
   <section class="bg-dark">
+    <h2 class="text-center text-white mb-[5vh] text-5 uppercase">
+      Our Services
+    </h2>
+
     <div
       class="grid grid-cols-4 gap-3 max-[1300px]:grid-cols-2 max-[850px]:grid-cols-1"
     >

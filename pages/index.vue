@@ -15,6 +15,9 @@
 
   <!-- *FAQ -->
   <!-- <Faq /> -->
+
+  <!-- *Media Collabs -->
+  <Clients />
 </template>
 
 <!--* Styles -->
