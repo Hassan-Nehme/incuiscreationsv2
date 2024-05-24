@@ -26,7 +26,7 @@
     </div>
 
     <div class="flex items-center justify-center">
-      <h2 class="text-10 lowercase">CONTACT INFO HERE</h2>
+      <p class="text-6 lowercase">info@incuiscreations.com</p>
     </div>
   </div>
 </template>
