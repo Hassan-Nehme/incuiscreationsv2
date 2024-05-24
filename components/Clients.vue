@@ -7,52 +7,24 @@
 //     .fill()
 //     .map((val, i) => start + i);
 // };
-
-defineProps(["color"]);
 </script>
 
 <!--* HTML -->
 <template>
-  <section
-    class="bg-dark text-white grid min-[1200px]:grid-cols-2 gap-y-3 pb-[5vh] pt-[5vh]"
-  >
-    <!-- *Media Text -->
-    <div class="max-[1200px]:mb-5">
-      <h3 class="text-6 mb-3">
-        We design <br />delightful digital <br />
-        experiences.
-      </h3>
+  <section class="clients">
+    <div class="ourClients">
+      <h4>&mdash; Our Clients</h4>
 
-      <p class="mb-2 text-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-        nesciunt neque fugiat similique, blanditiis minima suscipit est
-        doloribus modi repudiandae?
-      </p>
-
-      <p class="mb-5 text-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, est
-        aliquid fugiat molestias facilis cum nostrum ducimus, porro sequi nihil
-        necessitatibus perferendis dolor officiis ut ullam minus doloremque
-        nobis suscipit?
-      </p>
-
-      <nuxt-link
-        to="/contact"
-        class="bg-white px-4 py-1 inline-block rounded-4 font-medium"
-        >Get in touch</nuxt-link
-      >
-    </div>
-
-    <!-- *Media Logos -->
-    <div class="mediaCollabs grid">
-      <div class="clientsGrid grid grid-cols-3 gap-x-3 gap-y-6">
+      <!-- *Clients -->
+      <div class="clientsGrid">
+        <!-- *PNG -->
         <NuxtImg
-          class="w-full h-full mx-auto object-contain max-w-[30rem]"
           v-motion-visibleOnceSlideBottom
+          width="150"
           format="webp"
-          :src="`/mediacollabs/${index}.png`"
-          alt="logos of brands that we collaberated with"
-          v-for="index in 8"
+          :src="`/ourclients/${index}.png`"
+          alt="logos of brands that we worked with, they are our clients"
+          v-for="index in 9"
         />
       </div>
     </div>
@@ -60,4 +32,31 @@ defineProps(["color"]);
 </template>
 
 <!--* Styles -->
-<style lang="scss"></style>
+<style lang="scss">
+.clients {
+  background-color: $color-background-dark;
+  color: $color-text-light;
+  h4 {
+    margin-bottom: 5rem;
+    font-weight: 500;
+  }
+}
+
+.clientsGrid {
+  // background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+  gap: 6rem 3rem;
+  margin-bottom: 8rem;
+
+  img {
+    margin: 0 auto;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 11rem;
+    max-width: 20rem;
+  }
+}
+</style>

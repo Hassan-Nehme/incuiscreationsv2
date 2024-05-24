@@ -256,7 +256,7 @@ const solutions = [
   </section>
 
   <!-- *Media Collabs -->
-  <Clients />
+  <MediaCollabs />
 </template>
 
 <!--* Styles -->

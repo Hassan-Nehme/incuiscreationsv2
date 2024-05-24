@@ -17,6 +17,9 @@
   <!-- <Faq /> -->
 
   <!-- *Media Collabs -->
+  <!-- <MediaCollabs /> -->
+
+  <!-- *Clients -->
   <Clients />
 </template>
 
