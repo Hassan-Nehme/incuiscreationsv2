@@ -57,7 +57,8 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
 
           <!-- *Album Cover Image -->
           <div class="overflow-hidden rounded-[1rem]">
-            <img
+            <NuxtImg
+              width="1300"
               class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out contrast-[1.2]"
               :src="`/portfolio/coverphotos/${album.name}.webp`"
               :alt="`${album.name} cover photo`"

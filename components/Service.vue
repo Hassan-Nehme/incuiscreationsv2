@@ -26,6 +26,7 @@ defineProps(["title", "description", "index", "image"]);
         <!-- *IMG -->
         <div>
           <NuxtImg
+            width="750"
             loading="lazy"
             class="w-full h-[60rem] object-cover object-top min-[1300px]:max-h-[40rem] mb-1 rounded-1"
             :src="`/portfolio/coverphotos/${image}.webp`"
