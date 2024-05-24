@@ -55,7 +55,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     {
       name: "imageamplified",
       images: 13,
-      title: `IMAGE AMPLIFIED - "CASTING ATTITUDE." `,
+      title: `IMAGE AMPLIFIED `,
       links: [
         "https://www.youtube-nocookie.com/embed/1alXsGDdU4Q?si=d8CApnBvS-Wjifo4",
       ],
@@ -116,7 +116,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     {
       name: "reinventedparfums",
       images: 3,
-      title: "REINVENTED FRAGRANCES",
+      title: "reinvented parfums",
       links: [
         "https://www.youtube-nocookie.com/embed/qZKFs_sLn5M?si=Lj6ad_XHQHv5beo4",
         "https://www.youtube-nocookie.com/embed/ZZgpodc8IfM?si=YnIow2zdwC3yURQu",
@@ -134,7 +134,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     {
       name: "lesinconnus",
       images: 5,
-      title: "LES INCONNUS - DEEP HAZE",
+      title: "LES INCONNUS",
       links: [
         "https://www.youtube-nocookie.com/embed/gCHBaSsV1rE?si=Hamk73CTlOTpd-81",
       ],

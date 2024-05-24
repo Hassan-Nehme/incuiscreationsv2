@@ -88,7 +88,7 @@ const heroSubTitles = [
     url("/portfolio/coverphotos/lesinconnus.webp");
 
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 

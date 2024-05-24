@@ -204,11 +204,15 @@ const solutions = [
         <!-- *Image 2-->
         <div class="flex justify-end max-[1150px]:mt-5">
           <nuxt-link
-            to="/portfolio/sospiro"
+            to="/portfolio/imageamplified"
             class="max-w-[40rem] mr-5"
-            v-motion-visibleSlideBottom
+            v-motion-slideBottom
           >
-            <img class="rounded-1" src="/portfolio/sospiro/3.webp" alt="" />
+            <img
+              class="rounded-1"
+              src="/portfolio/imageamplified/7.webp"
+              alt=""
+            />
           </nuxt-link>
         </div>
       </div>
@@ -230,7 +234,7 @@ const solutions = [
         <nuxt-link
           to="/portfolio/louisexincouture"
           class="max-w-[40rem]"
-          v-motion-visibleSlideBottom
+          v-motion-slideBottom
         >
           <img
             class="rounded-1"
