@@ -1,3 +1,55 @@
+<script setup>
+// *Nav  Data
+
+const navLinks = [
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Services",
+    link: "/services",
+  },
+  {
+    name: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
+
+// *Navbar Menu Logic
+const body = document.querySelector("body");
+const showMenu = ref(false);
+const query = window.matchMedia("(min-width:1150px)");
+
+const toggleMenu = () => {
+  if (!query.matches) {
+    showMenu.value = !showMenu.value;
+
+    showMenu.value
+      ? (body.style.overflow = "hidden")
+      : (body.style.overflow = "visible");
+  }
+};
+
+// *Media Query Menu
+//? Check viewport size on launch
+if (query.matches) showMenu.value = true;
+
+//? Show/Hide menu on viewport size change
+window.matchMedia("(max-width: 1150px)").onchange = (e) => {
+  e.matches ? (showMenu.value = false) : (showMenu.value = true);
+};
+
+// ? Allow Scroll on larger screens incase someone opens nav menu without closing it and increases viewport size
+query.onchange = (e) => {
+  if (e.matches) body.style.overflow = "visible";
+};
+</script>
+
 <template>
   <nav :class="{ absNav: $route.path === '/' }">
     <!-- *Logo -->
@@ -10,36 +62,17 @@
     <!-- * Menu Options -->
     <div class="menu-options" :class="{ 'menu-hide': !showMenu }">
       <ul class="nav-links">
-        <!--? Home -->
-        <!-- <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="portfolio page" to="/">Home</nuxt-link>
-        </li> -->
-
         <!--? About -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="about page" to="/about" rel="nofollow"
-            >About</nuxt-link
-          >
-        </li>
-
-        <!--? Services -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="our services page" to="/services"
-            >Services</nuxt-link
-          >
-        </li>
-
-        <!--? Portfolio -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="portfolio page" to="/portfolio"
-            >Portfolio</nuxt-link
-          >
-        </li>
-
-        <!--? Contact -->
-        <li @click="toggleMenu" class="nav-link line-under">
-          <nuxt-link aria-label="about page" to="/contact" rel="nofollow"
-            >Contact</nuxt-link
+        <li
+          @click="toggleMenu"
+          class="nav-link line-under"
+          v-for="navLink in navLinks"
+        >
+          <nuxt-link
+            aria-label="about page"
+            :to="`${navLink.link}`"
+            rel="internal"
+            >{{ navLink.name }}</nuxt-link
           >
         </li>
       </ul>
@@ -211,34 +244,3 @@ nav {
   }
 }
 </style>
-
-<script setup>
-// *Navbar Menu Logic
-const body = document.querySelector("body");
-const showMenu = ref(false);
-const query = window.matchMedia("(min-width:1150px)");
-
-const toggleMenu = () => {
-  if (!query.matches) {
-    showMenu.value = !showMenu.value;
-
-    showMenu.value
-      ? (body.style.overflow = "hidden")
-      : (body.style.overflow = "visible");
-  }
-};
-
-// *Media Query Menu
-//? Check viewport size on launch
-if (query.matches) showMenu.value = true;
-
-//? Show/Hide menu on viewport size change
-window.matchMedia("(max-width: 1150px)").onchange = (e) => {
-  e.matches ? (showMenu.value = false) : (showMenu.value = true);
-};
-
-// ? Allow Scroll on larger screens incase someone opens nav menu without closing it and increases viewport size
-query.onchange = (e) => {
-  if (e.matches) body.style.overflow = "visible";
-};
-</script>

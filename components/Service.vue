@@ -1,7 +1,7 @@
 <!--* Script -->
 
 <script setup>
-defineProps(["title", "description", "index"]);
+defineProps(["title", "description", "index", "image"]);
 </script>
 
 <!--* HTML -->
@@ -25,9 +25,10 @@ defineProps(["title", "description", "index"]);
 
         <!-- *IMG -->
         <div>
-          <img
+          <NuxtImg
+            loading="lazy"
             class="w-full h-[60rem] object-cover object-top min-[1300px]:max-h-[40rem] mb-1 rounded-1"
-            src="/portfolio/lesinconnus/1.webp"
+            :src="`/portfolio/coverphotos/${image}.webp`"
             alt=""
           />
         </div>
