@@ -57,6 +57,7 @@ const aboutInfo = {
       <div class="min-[1200px]:grid-cols-3 gap-2 grid">
         <!-- *Card -->
         <div
+          v-motion-slideBottom
           v-for="founder in founders"
           :style="{
             background: `linear-gradient(
