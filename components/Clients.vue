@@ -20,7 +20,8 @@
         <!-- *PNG -->
         <NuxtImg
           v-motion-visibleOnceSlideBottom
-          width="150"
+          loading="lazy"
+          width="200"
           format="webp"
           :src="`/ourclients/${index}.png`"
           alt="logos of brands that we worked with, they are our clients"
