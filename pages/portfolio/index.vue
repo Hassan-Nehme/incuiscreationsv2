@@ -60,7 +60,10 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
             <NuxtImg
               width="1400"
               class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out contrast-[1.2]"
-              :class="{ 'object-right': album.name === 'sospiro' }"
+              :class="{
+                'object-right': album.name === 'sospiro',
+                'object-top': album.name === 'lesinconnus',
+              }"
               :src="`/portfolio/coverphotos/${album.name}.webp`"
               :alt="`${album.name} cover photo`"
             />
