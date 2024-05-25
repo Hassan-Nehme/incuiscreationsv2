@@ -38,7 +38,7 @@ const heroSubTitles = [
 <template>
   <section class="hero">
     <!-- *Left Hero -->
-    <div class="hero-left">
+    <div class="hero-left" v-motion-enterFadeIn>
       <h1>
         incuis <br />
         <span>agency</span> creations <br />
@@ -56,9 +56,9 @@ const heroSubTitles = [
     <!-- *Right Hero -->
     <div class="hero-right">
       <div class="hero-box" v-for="sub in heroSubTitles">
-        <h3>{{ sub.tag }}</h3>
-        <h5>{{ sub.sub1 }}</h5>
-        <h5>{{ sub.sub2 }}</h5>
+        <h3 v-motion-enterFadeIn>{{ sub.tag }}</h3>
+        <h5 v-motion-slideBottom>{{ sub.sub1 }}</h5>
+        <h5 v-motion-slideBottom>{{ sub.sub2 }}</h5>
       </div>
     </div>
   </section>

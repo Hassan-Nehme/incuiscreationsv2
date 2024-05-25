@@ -7,6 +7,7 @@ import {
   visibleOnceSlideTop,
   visibleOncePop,
   visibleOnceFadeIn,
+  visibleOnceScaleRight,
 } from "./assets/animations/motionVisibleOnce";
 
 //& Visible
@@ -96,6 +97,7 @@ export default defineNuxtConfig({
           visibleSlideTop,
           visiblePop,
           visibleFadeIn,
+          visibleOnceScaleRight,
 
           //? Motion
           slideBottom,

@@ -46,15 +46,15 @@ const services = [
 <!--* HTML -->
 <template>
   <section class="our-services">
-    <h2>
+    <h2 v-motion-visibleOnceFadeIn>
       we take care of your marketing so you can focus on your business, whether
       it be online or in a physical store.
     </h2>
 
     <!-- *Services Grid -->
-    <div class="our-services-grid">
+    <div class="our-services-grid overflow-hidden">
       <!-- *Services Left -->
-      <div class="services-left">
+      <div class="services-left" v-motion-visibleOnceSlideLeft>
         <h1>
           digital& <br />
           retail <br />marketing
@@ -75,17 +75,17 @@ const services = [
       </div>
 
       <!-- *Services Middle -->
-      <div class="services-middle">
+      <div class="services-middle overflow-hidden">
         <NuxtImg
+          v-motion-visibleOnceSlideBottom
           class="img-cover rounded-1"
           src="/portfolio/coverphotos/lesinconnus.webp"
           alt=""
-          loading="lazy"
         />
       </div>
 
       <!-- *Services Right -->
-      <div class="services-right">
+      <div class="services-right my-auto" v-motion-visibleOnceSlideRight>
         <h3>
           Branding, content production, campaigns, lookbooks, line sheets,
           retail placement, events, pop-up stores & more to meet your business

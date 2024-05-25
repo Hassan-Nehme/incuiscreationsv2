@@ -35,7 +35,10 @@ const services = [
 <!--* HTML -->
 <template>
   <section class="bg-dark">
-    <h2 class="text-center text-white mb-[5vh] text-5 uppercase">
+    <h2
+      class="text-center text-white mb-[5vh] text-5 uppercase"
+      v-motion-visibleOnceFadeIn
+    >
       Our Services
     </h2>
 

@@ -6,7 +6,10 @@ defineProps(["title", "description", "index", "image"]);
 
 <!--* HTML -->
 <template>
-  <div class="bg-white text-black rounded-1 max-w-[80rem] mx-auto">
+  <div
+    class="bg-white text-black rounded-1 max-w-[80rem] mx-auto"
+    v-motion-visibleOnceSlideBottom
+  >
     <div>
       <p
         class="border-b-[2px] border-black border-dashed text-center text-[4.5rem] py-3"
@@ -18,7 +21,7 @@ defineProps(["title", "description", "index", "image"]);
         <!-- *Text -->
         <div class="text-center">
           <h3 class="text-4 uppercase mb-3 mt-2">{{ title }}</h3>
-          <p>
+          <p class="text-[2.6rem]">
             {{ description }}
           </p>
         </div>
@@ -26,6 +29,7 @@ defineProps(["title", "description", "index", "image"]);
         <!-- *IMG -->
         <div>
           <NuxtImg
+            v-motion-visibleOnceFadeIn
             width="750"
             loading="lazy"
             class="w-full h-[60rem] object-cover object-top min-[1300px]:max-h-[40rem] mb-1 rounded-1"

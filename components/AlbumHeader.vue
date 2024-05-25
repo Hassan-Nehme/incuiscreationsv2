@@ -19,7 +19,7 @@ defineProps(["album", "title", "description", "categories"]);
 
     <div class="flex flex-col mb-[5vh]" v-motion-enterFadeIn>
       <p
-        class="text-[2.8rem] max-w-[110rem] mb-3 self-end font-[300]"
+        class="text-[2.8rem] max-w-[110rem] mb-3 self-end"
         v-for="desc in description"
       >
         {{ desc }}

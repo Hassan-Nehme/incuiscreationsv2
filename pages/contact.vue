@@ -18,14 +18,14 @@
 
   <!-- *Contact Form -->
   <div
-    class="grid min-[1150px]:grid-cols-2 bg-dark pt-[10vh] px-[5vw] text-white"
+    class="grid min-[1201px]:grid-cols-2 bg-dark pt-[10vh] px-[5vw] text-white"
   >
     <!-- *Form -->
-    <div class="max-[1150px]:max-w-[100%]">
+    <div class="max-[1200px]:max-w-[100%]">
       <ContactForm />
     </div>
 
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center max-[1200px]:hidden">
       <p class="text-6 lowercase">info@incuiscreations.com</p>
     </div>
   </div>

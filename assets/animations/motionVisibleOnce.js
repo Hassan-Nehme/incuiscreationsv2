@@ -1,3 +1,5 @@
+import { rollLeft } from "@vueuse/motion";
+
 const dur = 800;
 
 //* Visible Once Slide Left
@@ -85,6 +87,24 @@ export const visibleOnceFadeIn = {
     opacity: 1,
     transition: {
       duration: dur,
+    },
+  },
+};
+
+//*  Visible FadeIn
+export const visibleOnceScaleRight = {
+  initial: {
+    opacity: 0,
+    scale: 1.25,
+    y: 1000,
+  },
+  visibleOnce: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+
+    transition: {
+      duration: 1200,
     },
   },
 };
