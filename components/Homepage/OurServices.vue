@@ -46,19 +46,22 @@ const services = [
 <!--* HTML -->
 <template>
   <section class="our-services">
-    <h2 v-motion-visibleOnceFadeIn>
+    <h1
+      class="uppercase text-center max-w-[150rem] mx-auto my-10 text-[4.8rem]"
+      v-motion-visibleOnceFadeIn
+    >
       we take care of your marketing so you can focus on your business, whether
       it be online or in a physical store.
-    </h2>
+    </h1>
 
     <!-- *Services Grid -->
     <div class="our-services-grid overflow-hidden">
       <!-- *Services Left -->
       <div class="services-left" v-motion-visibleOnceSlideLeft>
-        <h1>
+        <h2 class="text-[8rem] text-right font-[400] uppercase mb-5">
           digital& <br />
           retail <br />marketing
-        </h1>
+        </h2>
         <p>
           You have an incredible brand with meticulously designed products that
           reflect your unique style and vision. But now comes the challenge -
@@ -119,13 +122,13 @@ const services = [
 <style lang="scss">
 .our-services {
   h2 {
-    text-transform: uppercase;
-    text-align: center;
-    max-width: 150rem;
-    margin: 0 auto;
-    margin-bottom: $spacing-xlg;
-    margin-top: $spacing-xlg;
-    font-family: $base-ff;
+    // text-transform: uppercase;
+    // text-align: center;
+    // max-width: 150rem;
+    // margin: 0 auto;
+    // margin-bottom: $spacing-xlg;
+    // margin-top: $spacing-xlg;
+    // font-family: $base-ff;
     letter-spacing: $letter-spacing-md;
   }
 }
@@ -139,13 +142,13 @@ const services = [
 }
 
 .services-left {
-  h1 {
-    text-align: right;
-    font-weight: 400;
-    font-size: 8rem;
-    text-transform: uppercase;
-    margin-bottom: $spacing-lg;
-  }
+  // h1 {
+  //   text-align: right;
+  //   font-weight: 400;
+  //   font-size: 8rem;
+  //   text-transform: uppercase;
+  //   margin-bottom: $spacing-lg;
+  // }
 
   p {
     margin-bottom: $spacing-md;
