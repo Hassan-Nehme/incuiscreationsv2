@@ -57,8 +57,8 @@ const heroSubTitles = [
     <div class="hero-right">
       <div class="hero-box" v-for="sub in heroSubTitles">
         <h3 v-motion-enterFadeIn>{{ sub.tag }}</h3>
-        <h5 v-motion-slideBottom>{{ sub.sub1 }}</h5>
-        <h5 v-motion-slideBottom>{{ sub.sub2 }}</h5>
+        <h4 v-motion-slideBottom>{{ sub.sub1 }}</h4>
+        <h4 v-motion-slideBottom>{{ sub.sub2 }}</h4>
       </div>
     </div>
   </section>
@@ -133,11 +133,12 @@ const heroSubTitles = [
 }
 
 .hero-box {
-  h5 {
+  h4 {
     padding-left: $spacing-md;
     text-transform: uppercase;
     font-weight: 300;
     font-family: $base-ff;
+    font-size: 3rem;
   }
 
   margin-bottom: $spacing-md;
