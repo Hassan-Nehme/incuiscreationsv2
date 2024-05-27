@@ -39,9 +39,9 @@ const heroSubTitles = [
   <section class="hero">
     <!-- *Left Hero -->
     <div class="hero-left" v-motion-enterFadeIn>
-      <h1>
+      <h1 class="min-[650px]:leading-[.9]">
         incuis <br />
-        <span>agency</span> creations <br />
+        <span class="max-[650px]:hidden">agency</span> creations <br />
         <span> Full-Service Marketing</span>
       </h1>
 
@@ -102,7 +102,7 @@ const heroSubTitles = [
 
   h1 {
     text-transform: uppercase;
-    line-height: 0.9;
+    // line-height: 0.9;
 
     margin-bottom: $spacing-sm;
   }

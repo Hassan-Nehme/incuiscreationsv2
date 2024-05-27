@@ -69,7 +69,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
           </div>
 
           <!-- *Album Title -->
-          <h3 class="uppercase pt-3 text-5 font-[300]">{{ album.title }}</h3>
+          <h3 class="uppercase pt-3 text-5">{{ album.title }}</h3>
         </div>
       </nuxt-link>
     </div>

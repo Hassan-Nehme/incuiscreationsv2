@@ -72,6 +72,15 @@ export default defineNuxtConfig({
           content:
             "IncuisCreations is high-end marketing agency providing a variety of services, located in Paris, France, with the option to work with clients online",
         },
+        {
+          name: "keywords",
+          content:
+            "pest control, pests, disinfection, marketing, retail placement, europe, global, dubai, uae, france, paris",
+        },
+        {
+          name: "author",
+          content: "bekford",
+        },
       ],
     },
   },
