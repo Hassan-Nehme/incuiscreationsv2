@@ -89,6 +89,7 @@ export default defineNuxtConfig({
   //& VueUse Motion
   runtimeConfig: {
     public: {
+      gtagId: "G-60LLREQWKE",
       motion: {
         directives: {
           //? Visible Once
