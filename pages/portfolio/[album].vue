@@ -1,5 +1,7 @@
 <!--* Script -->
 <script setup>
+const route = useRoute();
+
 import { useAlbumsStore } from "/stores/albumsStore";
 const albumsStore = useAlbumsStore();
 
@@ -8,6 +10,10 @@ const { album } = useRoute().params;
 
 // * Find the specific album details
 const details = albumsStore.allAlbums.find((det) => det.name === album);
+
+useHead({
+  title: `${route.params.album} - ${details.categories}`,
+});
 </script>
 
 <!--* HTML -->

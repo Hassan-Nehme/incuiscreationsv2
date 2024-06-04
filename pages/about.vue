@@ -1,5 +1,9 @@
 <!--* Script -->
 <script setup>
+useHead({
+  title: "About - IncuisCreations Marketing",
+});
+
 const founders = {
   leda: {
     name: ["leda", "meintani"],

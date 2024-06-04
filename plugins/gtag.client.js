@@ -5,7 +5,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     window.dataLayer.push(arguments);
   }
 
-  console.log("gtagId", gtagId);
   window.dataLayer = window.dataLayer || [];
 
   gtag("js", new Date());

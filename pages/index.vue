@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: "Home - Marketing & Production Agency IncuisCreations",
+});
+</script>
+
 <!--* HTML -->
 <template>
   <!-- *Hero -->

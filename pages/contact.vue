@@ -1,5 +1,9 @@
 <!--* Script -->
-<script setup></script>
+<script setup>
+useHead({
+  title: "Contact US - IncuisCreations Marketing",
+});
+</script>
 
 <!--* HTML -->
 <template>

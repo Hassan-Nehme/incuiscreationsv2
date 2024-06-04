@@ -1,5 +1,9 @@
 <!--* Script -->
 <script setup>
+useHead({
+  title: "Portfolio - IncuisCreations Marketing",
+});
+
 import { useAlbumsStore } from "/stores/albumsStore";
 
 const albumsStore = useAlbumsStore();
