@@ -1,7 +1,7 @@
 <!--* Script -->
 <script setup>
 useHead({
-  title: "Services - IncuisCreations Marketing",
+  title: "Services - Incuis Creations Marketing & Production Agency",
 });
 
 const services = [
@@ -188,7 +188,11 @@ const solutions = [
           class="max-w-[40rem]"
           v-motion-slideBottom
         >
-          <img class="rounded-1" src="/portfolio/lesinconnus/1.webp" alt="" />
+          <img
+            class="rounded-1"
+            src="/portfolio/lesinconnus/1.webp"
+            alt=""
+          />
         </nuxt-link>
 
         <!-- *Image 2-->
@@ -208,7 +212,10 @@ const solutions = [
       </div>
 
       <!-- *Second Column - Production Services -->
-      <div class="p-2 max-[1150px]:mt-3" v-motion-enterFadeIn>
+      <div
+        class="p-2 max-[1150px]:mt-3"
+        v-motion-enterFadeIn
+      >
         <h2 class="mb-3 font-bold capitalize">production services</h2>
 
         <ShowService
@@ -235,7 +242,10 @@ const solutions = [
       </div>
 
       <!-- *Fourth Column - List Services -->
-      <div class="p-2 min-[1150px]:ml-3 max-[1150px]:mt-5" v-motion-enterFadeIn>
+      <div
+        class="p-2 min-[1150px]:ml-3 max-[1150px]:mt-5"
+        v-motion-enterFadeIn
+      >
         <!-- *Digital Marketing -->
         <h2 class="mb-3 font-bold capitalize">digital marketing</h2>
         <ShowService

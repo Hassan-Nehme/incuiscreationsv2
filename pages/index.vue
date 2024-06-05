@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: "Home - Marketing & Production Agency IncuisCreations",
+  title: "Home - Marketing & Production Agency Incuis Creations",
 });
 </script>
 

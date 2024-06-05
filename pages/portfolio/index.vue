@@ -1,7 +1,7 @@
 <!--* Script -->
 <script setup>
 useHead({
-  title: "Portfolio - IncuisCreations Marketing",
+  title: "Portfolio - Incuis Creations Marketing & Production Agency",
 });
 
 import { useAlbumsStore } from "/stores/albumsStore";

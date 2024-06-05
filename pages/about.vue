@@ -1,7 +1,7 @@
 <!--* Script -->
 <script setup>
 useHead({
-  title: "About - IncuisCreations Marketing",
+  title: "About - Incuis Creations Marketing & Production Agency",
 });
 
 const founders = {
@@ -55,7 +55,12 @@ const aboutInfo = {
 
     <!-- *Vision -->
     <div>
-      <h3 v-motion-enterFadeIn class="mb-3">&mdash; Our Visionaries.</h3>
+      <h3
+        v-motion-enterFadeIn
+        class="mb-3"
+      >
+        &mdash; Our Visionaries.
+      </h3>
 
       <!-- *Card Grid -->
       <div class="min-[1200px]:grid-cols-3 gap-2 grid">
@@ -80,9 +85,11 @@ const aboutInfo = {
           <div class="flex flex-col justify-end min-h-[100%]">
             <div class="bg-accent/30 min-[1200px]:h-[75rem] p-2 py-5">
               <h4 class="text-5 font-bold block">
-                <span class="block capitalize" v-for="n in founder.name">{{
-                  n
-                }}</span>
+                <span
+                  class="block capitalize"
+                  v-for="n in founder.name"
+                  >{{ n }}</span
+                >
               </h4>
 
               <div class="mt-5">
