@@ -61,8 +61,19 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "IncuisCreations - Marketing Agency",
-      link: [{ rel: "icon", type: "image/png", href: "/logo.png" }],
+      title:
+        "Incuis Creations - Marketing & Production Agency in Paris, France",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/logo.png",
+        },
+        {
+          rel: "canonical",
+          href: "https://incuiscreations.com",
+        },
+      ],
       htmlAttrs: {
         lang: "en",
       },
@@ -70,16 +81,16 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "IncuisCreations is high-end marketing agency providing a variety of services, located in Paris, France, with the availability to work with clients globally to provide the best marketing solutions across different regions and countries to meet your business needs.",
+            "Incuis Creations is high-end marketing agency providing a variety of services, located in Paris, France, with the availability to work with clients globally to provide the best marketing solutions across different regions & countries to meet your business needs. Advertising, full-marketing, retail placement, digital marketing, social media management, video production, content creation, brand development, and more.",
         },
         {
           name: "keywords",
           content:
-            "advertising agency, content creation, full marketing, digital marketing, social media management, video production, retail placement, brand development, middle east, europe, dubai",
+            "advertising agency, content creation, full marketing, digital marketing, social media management, video production, retail placement, brand development, middle east, europe, france, dubai",
         },
         {
           name: "author",
-          content: "IncuisCreations",
+          content: "Incuis Creations",
         },
       ],
     },

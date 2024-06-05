@@ -28,14 +28,8 @@
         audience and increased credibility.
       </p>
 
-      <!-- <p class="mb-5 text-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, est
-        aliquid fugiat molestias facilis cum nostrum ducimus, porro sequi nihil
-        necessitatibus perferendis dolor officiis ut ullam minus doloremque
-        nobis suscipit?
-      </p> -->
-
       <nuxt-link
+        aria-label="contact us page internal link"
         to="/contact"
         class="bg-white px-4 py-1 inline-block max-w-max rounded-4 font-[600]"
         >Get in touch</nuxt-link

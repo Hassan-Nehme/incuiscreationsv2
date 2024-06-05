@@ -51,25 +51,40 @@ query.onchange = (e) => {
 </script>
 
 <template>
-  <nav :class="{ absNav: $route.path === '/' }">
+  <nav
+    :class="{
+      absNav: $route.path === '/',
+    }"
+  >
     <!-- *Logo -->
     <div class="logo">
-      <nuxt-link to="/" aria-label="home"
-        ><NuxtImg src="/logo.png" alt="image of logo" width="200" format="webp"
+      <nuxt-link
+        to="/"
+        aria-label="home"
+        ><NuxtImg
+          src="/logo.png"
+          alt="image of logo"
+          width="200"
+          format="webp"
       /></nuxt-link>
     </div>
 
     <!-- * Menu Options -->
-    <div class="menu-options" :class="{ 'menu-hide': !showMenu }">
+    <div
+      class="menu-options"
+      :class="{
+        'menu-hide': !showMenu,
+      }"
+    >
       <ul class="nav-links">
-        <!--? About -->
+        <!--? Links -->
         <li
           @click="toggleMenu"
           class="nav-link line-under"
           v-for="navLink in navLinks"
         >
           <nuxt-link
-            aria-label="about page"
+            :aria-label="`${navLink.name} page internal link`"
             :to="`${navLink.link}`"
             rel="internal"
             >{{ navLink.name }}</nuxt-link
@@ -87,7 +102,10 @@ query.onchange = (e) => {
     </div>
 
     <!-- *Mobile Burger Menu -->
-    <div @click="toggleMenu" class="menu-icon btn-nobase">
+    <div
+      @click="toggleMenu"
+      class="menu-icon btn-nobase"
+    >
       <button aria-label="burger menu toggle">
         <!-- ?White -->
         <Icon

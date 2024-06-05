@@ -38,6 +38,7 @@ const quickLinks = [
     <div class="footerLinks">
       <div>
         <nuxt-link
+          :aria-label="`${link.title} internal page link`"
           class="mr-2"
           v-for="link in quickLinks"
           :to="`${link.link}`"
@@ -48,20 +49,28 @@ const quickLinks = [
       <div class="socialLinks">
         <!-- *Instagram -->
         <nuxt-link
-          aria-label="instagram external link"
+          aria-label="instagram link"
+          rel="external"
           to="https://www.instagram.com/incuiscreations?igsh=dWd4cHA3b3F0YnA0"
           target="_blank"
         >
-          <Icon name="mdi:instagram" color="white" size="3.5rem"
+          <Icon
+            name="mdi:instagram"
+            color="white"
+            size="3.5rem"
         /></nuxt-link>
 
         <!-- *LinkedIn -->
         <nuxt-link
-          aria-label="linkedIn external link"
+          aria-label="linkedIn link"
+          rel="external"
           to="https://www.linkedin.com/company/incuiscreations/"
           target="_blank"
         >
-          <Icon name="mdi:linkedin" color="white" size="3.5rem"
+          <Icon
+            name="mdi:linkedin"
+            color="white"
+            size="3.5rem"
         /></nuxt-link>
       </div>
     </div>
