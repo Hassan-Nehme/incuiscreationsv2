@@ -36,15 +36,15 @@ const currentTag = ref("all projects");
 
 <!--* HTML -->
 <template>
-  <div class="filterHeader text-center mb-10" v-motion-enterFadeIn>
+  <!-- console.log(toRaw(albumsStore.currentAlbums)) -->
+  <div
+    class="filterHeader text-center mb-10"
+    v-motion-enterFadeIn
+  >
     <h5
       class="p-2 font-[300] cursor-pointer text-[2.6rem] inline-block uppercase hover:text-secondary transition-all duration-500 ease-in-out"
       v-for="category in categories"
-      @click="
-        (currentTag = category),
-          albumsWithTag(currentTag),
-          console.log(toRaw(albumsStore.currentAlbums))
-      "
+      @click="(currentTag = category), albumsWithTag(currentTag)"
       :class="{ filterActive: currentTag === category }"
     >
       {{ category }}

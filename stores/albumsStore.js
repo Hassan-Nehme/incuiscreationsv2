@@ -94,7 +94,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     },
     {
       name: "sospiro",
-      images: 6,
+      images: 16,
       title: "sospiro",
       links: [
         "https://www.youtube-nocookie.com/embed/mJFVimMumdg?si=nBxP0pQ0YbGV0nZ0",
@@ -115,7 +115,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     },
     {
       name: "reinventedparfums",
-      images: 3,
+      images: 6,
       title: "reinvented parfums",
       links: [
         "https://www.youtube-nocookie.com/embed/qZKFs_sLn5M?si=Lj6ad_XHQHv5beo4",
@@ -126,6 +126,8 @@ export const useAlbumsStore = defineStore("albums", () => {
         "digital content production",
         "art direction",
         "graphic design",
+        "photography",
+        "ad campaign",
       ],
       description: [
         "Our collaboration brought their unique, edgy, and futuristic style to life through captivating social media reels and cutting-edge 3D graphic designs. With an emphasis on reinventing the traditional, we meticulously crafted visuals that speak to the brand’s commitment to pushing boundaries and setting new standards in the fragrance industry.",
@@ -139,6 +141,19 @@ export const useAlbumsStore = defineStore("albums", () => {
         "https://www.youtube-nocookie.com/embed/gCHBaSsV1rE?si=Hamk73CTlOTpd-81",
       ],
       categories: ["photography", "digital content production", "lookbooks"],
+      description: [
+        "INCUIS collaborated with Les Inconnus to craft a visually captivating lookbook for their “Deep Haze” FW23 collection. This project emphasizes our expertise in creating lookbooks that not only align seamlessly with your brand’s identity but also serve as inspiring visual narratives.",
+        "The “Deep Haze” collection immerses viewers in a realm of deep thought and unwavering belief, featuring mesmerizing prints, hypnotic colors, and crystalline sounds. This lookbook showcases our commitment to translating your brand’s story into a style that is uniquely yours.",
+      ],
+    },
+    {
+      name: "annabeljewellery",
+      images: 18,
+      title: "annabel jewellery",
+      // links: [
+      //   "https://www.youtube-nocookie.com/embed/gCHBaSsV1rE?si=Hamk73CTlOTpd-81",
+      // ],
+      categories: ["photography"],
       description: [
         "INCUIS collaborated with Les Inconnus to craft a visually captivating lookbook for their “Deep Haze” FW23 collection. This project emphasizes our expertise in creating lookbooks that not only align seamlessly with your brand’s identity but also serve as inspiring visual narratives.",
         "The “Deep Haze” collection immerses viewers in a realm of deep thought and unwavering belief, featuring mesmerizing prints, hypnotic colors, and crystalline sounds. This lookbook showcases our commitment to translating your brand’s story into a style that is uniquely yours.",

@@ -30,7 +30,7 @@ useHead({
     </div>
 
     <div class="flex items-center justify-center max-[1200px]:hidden">
-      <p class="text-6 lowercase">info@incuiscreations.com</p>
+      <!-- <p class="text-6 lowercase">info@incuiscreations.com</p> -->
     </div>
   </div>
 </template>

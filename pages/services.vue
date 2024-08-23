@@ -109,7 +109,12 @@ const marketing = [
       "Nurture your audience and drive conversions with our email marketing solutions. From compelling content to visually appealing designs, we create email campaigns that resonate with your audience.",
   },
   {
-    title: "Content Scheduling",
+    title: "Social Media Strategy",
+    details:
+      "Streamline your content distribution with our content scheduling services. We ensure that your content is strategically scheduled across various platforms, maximizing visibility and engagement.",
+  },
+  {
+    title: "Social Media Management",
     details:
       "Streamline your content distribution with our content scheduling services. We ensure that your content is strategically scheduled across various platforms, maximizing visibility and engagement.",
   },
