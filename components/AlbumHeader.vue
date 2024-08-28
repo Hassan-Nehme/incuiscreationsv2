@@ -17,7 +17,10 @@ defineProps(["album", "title", "description", "categories"]);
 
     <!-- *Description -->
 
-    <div class="flex flex-col mb-[5vh]" v-motion-enterFadeIn>
+    <div
+      class="flex flex-col mb-[5vh]"
+      v-motion-enterFadeIn
+    >
       <p
         class="text-[2.8rem] max-w-[110rem] mb-3 self-end"
         v-for="desc in description"
@@ -25,7 +28,10 @@ defineProps(["album", "title", "description", "categories"]);
         {{ desc }}
       </p>
 
-      <p class="text-3 uppercase font-[300]" v-for="cat in categories">
+      <p
+        class="text-3 uppercase font-[300]"
+        v-for="cat in categories"
+      >
         {{ cat }}
       </p>
     </div>

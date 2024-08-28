@@ -42,6 +42,14 @@ useHead({
           alt="a selection of images for the album you're viewing"
         />
       </div>
+      <!-- <div v-if="album === 'reinventedparfums'">
+        <img
+          v-motion-visibleFadeIn
+          class="w-full min-h-full object-cover object-center rounded-1"
+          src="/portfolio/reinventedparfums/16.gif"
+          alt=""
+        />
+      </div> -->
     </div>
 
     <!-- *Youtube Video -->

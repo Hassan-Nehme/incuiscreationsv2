@@ -101,6 +101,7 @@ export const useAlbumsStore = defineStore("albums", () => {
         "https://www.youtube-nocookie.com/embed/5SfSov9rA1I?si=gEKIMWzSR6ptA5jP",
         "https://www.youtube-nocookie.com/embed/HgChAJXDIMI?si=g5YLlKTbqoU3-pgR",
         "https://www.youtube-nocookie.com/embed/xlsNpsY-hXU?si=IYFSlySJAhA2neBN",
+        "https://youtube.com/embed/l190voXkOpY?si=g6CvEPI3ZfculQxd",
       ],
       categories: [
         "ad campaign",
@@ -115,12 +116,14 @@ export const useAlbumsStore = defineStore("albums", () => {
     },
     {
       name: "reinventedparfums",
-      images: 6,
+      images: 15,
       title: "reinvented parfums",
       links: [
         "https://www.youtube-nocookie.com/embed/qZKFs_sLn5M?si=Lj6ad_XHQHv5beo4",
         "https://www.youtube-nocookie.com/embed/ZZgpodc8IfM?si=YnIow2zdwC3yURQu",
         "https://www.youtube-nocookie.com/embed/wvuHzraps-s?si=ea1QOmU376on1t93",
+        "https://youtube.com/embed/BUJM7mTUZ9A?si=2-Lz8UFgU3NQ3Zxd",
+        "https://www.youtube.com/embed/QWAltHC7dUc?si=TiBlY7uqgCGOYj1-",
       ],
       categories: [
         "digital content production",
