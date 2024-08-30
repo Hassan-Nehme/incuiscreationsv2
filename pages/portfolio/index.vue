@@ -62,7 +62,7 @@ albumsStore.currentAlbums = albumsStore.allAlbums;
           <!-- *Album Cover Image -->
           <div class="overflow-hidden rounded-[1rem]">
             <NuxtImg
-              width="1100"
+              width="900"
               class="w-full h-full aspect-[1/1.25] object-cover object-center transition-all duration-700 ease-in-out contrast-[1.2]"
               :class="{
                 'object-top': album.name === 'lesinconnus',

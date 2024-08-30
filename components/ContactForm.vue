@@ -13,7 +13,8 @@ const errorMsg = defineModel("errorMsg");
 const successMsg = defineModel("successMsg");
 const isPending = ref(false);
 
-const url = "https://formspree.io/f/xgegrjlz";
+// const url = "https://formspree.io/f/xgegrjlz"; //* TESTING URL
+const url = "https://formspree.io/f/mwpeyzpn";
 
 // &Submit Form
 const submitForm = async () => {
@@ -68,10 +69,17 @@ const submitForm = async () => {
   />
 
   <!-- *Success Toast -->
-  <Toast v-if="successMsg" :toastText="successMsg" :error="false" />
+  <Toast
+    v-if="successMsg"
+    :toastText="successMsg"
+    :error="false"
+  />
 
   <!-- *form Wrapper -->
-  <div class="form-wrapper text-white mb-5" v-motion-visibleSlideBottom>
+  <div
+    class="form-wrapper text-white mb-5"
+    v-motion-visibleSlideBottom
+  >
     <!-- *Form -->
     <form @submit.prevent="submitForm">
       <!-- <h3 class="font-semibold text-5 text-center mb-3">Send us a message!</h3> -->

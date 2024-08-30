@@ -31,8 +31,10 @@ useHead({
       class="grid gap-2 grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1 mx-2"
     >
       <!-- &Album Images -->
+      <!-- :src="`/portfolio/${album}/${index}.${
+        album === 'reinventedparfums' && index === 7 ? 'gif' : 'webp'
+      }`" -->
       <div v-for="index in details.images">
-        <!-- :placeholder="[50, 25, 75, 5]" -->
         <NuxtImg
           v-motion-visibleFadeIn
           width="850"
@@ -42,14 +44,6 @@ useHead({
           alt="a selection of images for the album you're viewing"
         />
       </div>
-      <!-- <div v-if="album === 'reinventedparfums'">
-        <img
-          v-motion-visibleFadeIn
-          class="w-full min-h-full object-cover object-center rounded-1"
-          src="/portfolio/reinventedparfums/16.gif"
-          alt=""
-        />
-      </div> -->
     </div>
 
     <!-- *Youtube Video -->

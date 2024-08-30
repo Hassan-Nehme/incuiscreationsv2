@@ -116,7 +116,7 @@ export const useAlbumsStore = defineStore("albums", () => {
     },
     {
       name: "reinventedparfums",
-      images: 15,
+      images: 16,
       title: "reinvented parfums",
       links: [
         "https://www.youtube-nocookie.com/embed/qZKFs_sLn5M?si=Lj6ad_XHQHv5beo4",
