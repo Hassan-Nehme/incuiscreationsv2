@@ -39,6 +39,7 @@ useHead({
           v-motion-visibleFadeIn
           width="850"
           class="w-full min-h-full object-cover object-center rounded-1"
+          :modifiers="{ animated: true }"
           loading="lazy"
           :src="`/portfolio/${album}/${index}.webp`"
           alt="a selection of images for the album you're viewing"
